@@ -1030,14 +1030,15 @@ footer {
   }
 
   .hero {
-    padding-top: 118px;
+    padding-top: 122px;
   }
 
   .eyebrow {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     letter-spacing: 0.01em;
-    min-height: 30px;
+    min-height: 28px;
     padding: 0 10px;
+    margin-bottom: 10px;
   }
 
   .hero h1 {
