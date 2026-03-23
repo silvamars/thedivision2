@@ -139,9 +139,6 @@ a {
 
 .card .list a:hover {
   text-decoration: underline;
-}.card a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .card:hover {
@@ -262,14 +259,19 @@ a {
     );
 }
 
+/* =========================
+   RESPONSIVO LIMPO
+========================= */
+
 .thumb {
   position: relative;
-  height: 160px;
+  width: 100%;
+  height: 180px;
   border-radius: 14px;
   overflow: hidden;
+  margin-bottom: 16px;
 }
 
-/* imagem ocupa 100% real */
 .thumb img {
   position: absolute;
   inset: 0;
@@ -279,16 +281,15 @@ a {
   transition: transform 0.4s ease;
 }
 
-/* overlay cinematográfico */
 .thumb::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0.25) 45%,
-    rgba(0, 0, 0, 0.05) 100%
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.05)
   );
 }
 
@@ -758,71 +759,6 @@ h4 {
   box-shadow: 0 0 0 5px rgba(255, 106, 19, 0.08);
 }
 
-/* =========================
-   THUMBS
-========================= */
-
-.thumb {
-  aspect-ratio: 16 / 9;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background:
-    linear-gradient(135deg, rgba(255, 106, 19, 0.22), rgba(103, 212, 255, 0.08)),
-    radial-gradient(circle at center, rgba(255, 255, 255, 0.07), transparent 60%);
-  display: grid;
-  height: 140px;
-  place-items: center;
-  margin-bottom: 16px;
-  overflow: hidden;
-  position: relative;
-}
-
-.thumb span {
-  position: relative;
-  z-index: 1;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.18em;
-  color: rgba(255, 255, 255, 0.78);
-  text-align: center;
-  padding: 0 12px;
-}
-
-.thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}Ok
-
-.thumb::before,
-.thumb::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.15)
-  );
-  border-radius: 50%;
-  filter: blur(2px);
-}
-
-.thumb::before {
-  width: 120px;
-  height: 120px;
-  background: rgba(255, 106, 19, 0.24);
-  left: 18px;
-  bottom: -18px;
-}
-
-.thumb::after {
-  width: 110px;
-  height: 110px;
-  background: rgba(103, 212, 255, 0.18);
-  right: 16px;
-  top: -20px;
-}
 
 /* =========================
    CTA / FOOTER
@@ -910,8 +846,6 @@ footer {
   }
 }
 
-
- 
 /* =========================
    RESPONSIVO LIMPO
 ========================= */
@@ -1018,6 +952,20 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .grid-4 > .card,
+  .grid-3 > .card,
+  .grid-2 > .card,
+  .grid-4 > a.card,
+  .grid-3 > a.card,
+  .grid-2 > a.card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .thumb {
+    height: 180px;
+  }
+
   .section-header {
     align-items: flex-start;
     flex-direction: column;
@@ -1057,6 +1005,10 @@ footer {
   .hero p {
     font-size: 0.96rem;
     line-height: 1.7;
+  }
+
+  .thumb {
+    height: 170px;
   }
 
   .panel,
