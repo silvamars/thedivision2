@@ -127,6 +127,23 @@ a {
   color: inherit;
 }
 
+.card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card .list a {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.card .list a:hover {
+  text-decoration: underline;
+}.card a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .card:hover {
   transform: translateY(-6px);
   transition: 0.3s;
