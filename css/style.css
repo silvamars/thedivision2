@@ -1082,7 +1082,7 @@ footer {
 
 .build-layout {
   position: relative;
-  min-height: 780px;
+  min-height: 940px;
   margin-top: 2.5rem;
   border: 1px solid rgba(255, 122, 0, 0.18);
   border-radius: 24px;
@@ -1107,9 +1107,9 @@ footer {
 
 .build-center {
   position: absolute;
-  inset: 50% auto auto 50%;
+  inset: 52% auto auto 50%;
   transform: translate(-50%, -50%);
-  width: 360px;
+  width: 300px;
   z-index: 2;
   text-align: center;
 }
@@ -1133,7 +1133,8 @@ footer {
 }
 
 .build-core-info {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+  padding: 0 12px;
 }
 
 .build-core-info h3 {
@@ -1198,15 +1199,14 @@ footer {
 }
 
 .gear-thumb {
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
   object-fit: contain;
-  border-radius: 10px;
+  transform: scale(1.15);
+  border-radius: 12px;
   border: 1px solid rgba(255, 122, 0, 0.25);
   background: radial-gradient(circle, #1c1f26, #0b0d12);
-  padding: 6px;
-  flex-shrink: 0;
-  image-rendering: -webkit-optimize-contrast;
+  padding: 4px;
 }
 
 .gear-label {
@@ -1241,13 +1241,13 @@ footer {
 
 .gear-slot {
   position: absolute;
-  width: 255px;
+  width: 290px;
   z-index: 2;
 }
 
 /* posições desktop */
 .slot-top {
-  top: 40px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1273,7 +1273,7 @@ footer {
 }
 
 .slot-bottom {
-  bottom: 40px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1371,6 +1371,16 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+
+  .gear-thumb {
+    width: 64px;
+    height: 64px;
+  }
+
+  .build-center {
+    width: 100%;
+  }
+
   .build-layout {
     padding: 1rem;
     border-radius: 18px;
