@@ -57,7 +57,7 @@ a {
 }
 
 .page-builds .bg-image {
-  background-image: url('../img/division-builds.jpg');
+  background-image: url('../img/the-division-2-builds-background.webp.webp');
   background-position: 68% 45%;
   background-size: 94%;
 }
@@ -759,6 +759,24 @@ h4 {
   object-fit: cover;
   object-position: center;
   transition: transform 0.4s ease;
+}
+
+.thumb-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-video {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.thumb-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .thumb::after {
