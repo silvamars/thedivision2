@@ -33,3 +33,30 @@ if (bgImage) {
     bgImage.style.transform = `scale(1.04) translateY(${offset * 0.08}px)`;
   });
 }
+
+/*** Lightbox para imagens ***/
+  document.addEventListener("DOMContentLoaded", () => {
+
+  const lightbox = document.getElementById("lightbox");
+  if (!lightbox) return;
+
+  const lightboxImg = lightbox.querySelector("img");
+
+  document.querySelectorAll(".lightbox-trigger img").forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.classList.add("active");
+      lightboxImg.src = img.src;
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      lightbox.classList.remove("active");
+    }
+  });
+
+});
