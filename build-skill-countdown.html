@@ -4,19 +4,18 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Build Skill Countdown | Agent Hub Division 2</title>
-  <meta name="description" content="Portal The Division 2."/>
+  <meta name="description" content="Build Skill DPS de Turret + Drone para The Division 2, ideal para Countdown, Summit, Heroicas, Lendárias e mundo aberto."/>
 
-  <!-- Fonts -->
   <link rel="icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-
-  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body>
+<body class="page-skill">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
   <div class="grid-bg"></div>
 
   <header class="topbar">
@@ -29,12 +28,11 @@
         </span>
       </a>
 
-
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
         ☰
       </button>
 
-      <nav class="menu">
+      <nav class="menu" id="mainMenu">
         <a href="index.html">Home</a>
         <a href="builds.html" class="active">Builds</a>
         <a href="raides.html">Raides</a>
@@ -51,10 +49,11 @@
     <section class="hero hero-build">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">Build completa | PvE | Countdown, Summit, Heroica e farm</span>
-          <h1>Skill Damage com <span class="accent">Turret + Drone</span></h1>
+          <span class="eyebrow">Build completa | PvE | Countdown, Summit, Heroica, Lendária e mundo aberto</span>
+          <h1>Skill DPS com <span class="accent">Turret + Drone</span></h1>
           <p>
-            Uma build extremamente confortável para PvE, ótima para quem quer farmar com segurança, jogar solo sem tanta pressão e manter dano constante enquanto controla melhor o campo. É uma das builds mais amigáveis para Countdown, Summit e missões heroicas.
+            Esta é a versão mais segura e consistente da build de skill para PvE geral. O foco é manter dano constante com skills automáticas,
+            boa distância de combate e excelente conforto para farm, progressão e atividades difíceis.
           </p>
 
           <div class="hero-actions">
@@ -77,7 +76,7 @@
             </div>
             <div class="mini-card">
               <strong>Ideal para</strong>
-              <span>Countdown e Summit</span>
+              <span>Lendária e farm</span>
             </div>
             <div class="mini-card">
               <strong>Dificuldade</strong>
@@ -98,17 +97,17 @@
         <article class="card stat-card">
           <span class="chip">Ponto forte</span>
           <h3>Consistência</h3>
-          <p>Turret e drone mantêm pressão constante e ajudam muito em farm e progressão.</p>
+          <p>Turret e drone mantêm pressão constante, puxam aggro e ajudam muito em missões longas.</p>
         </article>
         <article class="card stat-card">
           <span class="chip">Ponto fraco</span>
           <h3>EMP e jam</h3>
-          <p>Áreas com interferência em skills podem derrubar bastante o rendimento da build.</p>
+          <p>Black Tusk, jammer e áreas com muita interferência reduzem bastante o ritmo da build.</p>
         </article>
         <article class="card stat-card">
           <span class="chip">Melhor cenário</span>
           <h3>PvE seguro</h3>
-          <p>Brilha em missões longas, andares do Summit e farm com equipe casual.</p>
+          <p>Brilha em mundo aberto, Summit, Countdown e também funciona muito bem em Lendárias.</p>
         </article>
       </div>
     </section>
@@ -120,37 +119,91 @@
             <span class="section-kicker">Montagem</span>
             <h2 class="section-title">Peças recomendadas</h2>
             <p class="section-subtitle">
-              O foco da build é simples: maximizar dano de skill, eficiência e conforto de uso. Ela pode ter versões baratas e também versões mais refinadas para farm pesado.
+              A versão mais forte e consistente para turret + drone gira em torno de peças high-end com foco total em dano de skill.
             </p>
           </div>
         </div>
 
         <div class="grid-2">
           <article class="card">
-            <span class="chip">Versão principal</span>
+            <span class="chip">Versão meta</span>
             <h3>Configuração sugerida</h3>
             <ul class="list">
-              <li>3 peças de <strong>Empress International</strong> como base muito forte para skill damage</li>
-              <li>1 peça de <strong>Wyvern Wear</strong> para reforçar dano de skill</li>
-              <li>2 peças complementares para eficiência, haste ou conforto de farm</li>
-              <li>Todos os núcleos amarelos com foco total em skills</li>
-              <li>Skill Damage como prioridade principal e Haste como apoio</li>
+              <li>3 peças de <strong>Empress International</strong></li>
+              <li>2 peças de <strong>Hana-U Corporation</strong></li>
+              <li>1 peça de <strong>Wyvern Wear</strong></li>
+              <li>Todos os núcleos <strong>amarelos</strong></li>
+              <li>Atributos: <strong>Skill Damage</strong> em tudo</li>
+              <li>Segundo atributo: <strong>Skill Haste</strong> ou Armor Regen</li>
             </ul>
           </article>
 
           <article class="card">
-            <span class="chip">Slots</span>
-            <h3>Distribuição prática</h3>
+            <span class="chip">Distribuição</span>
+            <h3>Exemplo prático</h3>
             <ul class="list">
               <li>Máscara Empress</li>
-              <li>Mochila Empress</li>
+              <li>Mochila Hana-U</li>
+              <li>Colete Empress</li>
+              <li>Luva Hana-U</li>
+              <li>Coldre Wyvern</li>
               <li>Joelheira Empress</li>
-              <li>Peça Wyvern</li>
-              <li>Colete high-end com talento forte para skills</li>
-              <li>Última peça para complementar sua versão preferida</li>
             </ul>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="montagem-real">
+      <div class="container">
+        <div class="section-header">
+          <div>
+          <span class="section-kicker">Visual real</span>
+          <h2 class="section-title">Build em ação</h2>
+          <p class="section-subtitle">
+            Visual real da build dentro do jogo, incluindo equipamentos e gameplay.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+      <!-- PRINT 1 -->
+      <article class="card">
+        <div class="thumb-image lightbox-trigger">
+          <img src="img/skills/The Division2-build-skill.png" alt="Build Skill + DPS no The Division 2 mostrando equipamentos e atributos no inventário">
+        </div>
+        <span class="chip">Equipamentos</span>
+        <h3>Setup completo</h3>
+        <p>Visão geral da build equipada com todas as peças e atributos.</p>
+      </article>
+
+      <!-- PRINT 2 -->
+      <article class="card">
+        <div class="thumb-image lightbox-trigger">
+          <img src="img/striker2-dps-build-inventory-division2.webp"
+               alt="Estatísticas da build Striker DPS com dano crítico e chance crítica">
+        </div>
+        <span class="chip">Atributos</span>
+        <h3>Status da build</h3>
+        <p>Configuração de dano crítico, chance crítica e DPS geral.</p>
+      </article>
+
+      <!-- VIDEO YOUTUBE-->
+      <article class="card">
+        <div class="thumb thumb-video">
+          <iframe 
+            src="https://www.youtube.com/embed/jIPiM7VZ6BE?si=FF6bZNZ-ZGUSp8Ui"
+            title="Gameplay Striker DPS The Division 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+          <span class="chip">Gameplay</span>
+          <h3>Build em combate</h3>
+          <p>Veja como a build se comporta em combate real.</p>
+      </article>
       </div>
     </section>
 
@@ -158,21 +211,21 @@
       <div class="container grid-2">
         <article class="card">
           <span class="chip">Colete</span>
-          <h3>Talentos que combinam bem</h3>
+          <h3>Talento ideal</h3>
           <ul class="list">
             <li><strong>Kinetic Momentum</strong> para dano estável e excelente sinergia com turret e drone</li>
-            <li><strong>Glass Cannon</strong> para versão mais agressiva e vulnerável</li>
-            <li><strong>Overwatch</strong> em abordagem mais segura para grupo</li>
+            <li><strong>Glass Cannon</strong> para versão mais agressiva e mais frágil</li>
+            <li><strong>Overwatch</strong> como alternativa segura para grupo</li>
           </ul>
         </article>
 
         <article class="card">
           <span class="chip">Mochila</span>
-          <h3>Talentos que fazem sentido</h3>
+          <h3>Talento ideal</h3>
           <ul class="list">
-            <li><strong>Combined Arms</strong> quando você consegue atirar com frequência e manter bônus</li>
-            <li><strong>Tech Support</strong> para reforço de dano após eliminações</li>
-            <li><strong>Perfect Combined Arms</strong> em setups específicos, se você tiver a peça ideal</li>
+            <li><strong>Combined Arms</strong> se você atira com frequência para manter o bônus</li>
+            <li><strong>Perfect Combined Arms</strong> com <strong>Force Multiplier</strong>, se tiver a peça</li>
+            <li><strong>Tech Support</strong> para versão simples e confortável</li>
           </ul>
         </article>
       </div>
@@ -185,17 +238,212 @@
             <span class="section-kicker">Armas</span>
             <h2 class="section-title">Armas de apoio para a build</h2>
             <p class="section-subtitle">
-              Aqui a arma não é a estrela principal. Ela serve para ativar talento, ajudar no controle da luta e finalizar alvos enquanto as skills fazem o trabalho pesado.
+              Aqui a arma não é a estrela principal. Ela serve para ativar talento, manter pressão e complementar o dano das skills.
             </p>
           </div>
         </div>
 
         <div class="grid-3">
           <article class="card">
-            <div class="thumb"><span>AR</span></div>
-            <span class="chip">Principal</span>
-            <h3>Fuzil de assalto estável</h3>
+            <div class="thumb"><span>EXO</span></div>
+            <span class="chip">Melhor opção</span>
+            <h3>Capacitor</h3>
             <ul class="list">
-              <li>Bom para marcar alvos, ajudar a limpar adds e ativar talentos</li>
-              <li>Mais confortável para média distância</li>
-              <li>Combina bem
+              <li>Melhor arma para build de skill DPS</li>
+              <li>Escala com Skill Tier</li>
+              <li>Entrega dano próprio e ainda reforça as skills</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="thumb"><span>AR</span></div>
+            <span class="chip">Alternativa</span>
+            <h3>Fuzil com In Sync</h3>
+            <ul class="list">
+              <li>Ótimo para setups sem Capacitor</li>
+              <li>Ajuda a ativar bônus cruzado entre arma e skill</li>
+              <li>Mais simples para farm inicial</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="thumb"><span>RIFLE</span></div>
+            <span class="chip">Suporte</span>
+            <h3>Arma secundária</h3>
+            <ul class="list">
+              <li>Pode usar rifle ou AR estável</li>
+              <li>Priorize precisão e conforto</li>
+              <li>Serve para marcar alvo e manter Combined Arms</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="atributos">
+      <div class="container grid-2">
+        <article class="card">
+          <span class="chip">Atributos</span>
+          <h3>O que rolar nas peças</h3>
+          <ul class="list">
+            <li><strong>Skill Damage</strong> em todas as peças</li>
+            <li><strong>Skill Haste</strong> como segunda prioridade</li>
+            <li><strong>Armor Regen</strong> pode entrar em versão de conforto</li>
+            <li>Mods: <strong>Skill Haste</strong></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Especialização</span>
+          <h3>Melhor escolha</h3>
+          <ul class="list">
+            <li><strong>Técnico</strong> é a melhor especialização geral</li>
+            <li>Dá conforto extra para skills e utilidade no PvE</li>
+            <li>Facilita muito a build em conteúdo difícil</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container grid-2">
+        <article class="card">
+          <span class="chip">Skill 1</span>
+          <h3>Assault Turret</h3>
+          <p>
+            É a base do setup. Segura corredor, pune rushers, ajuda a travar avanço inimigo e mantém dano estável o tempo inteiro.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="chip">Skill 2</span>
+          <h3>Striker Drone</h3>
+          <p>
+            Excelente para perseguir inimigos escondidos, forçar NPC a sair da cobertura e manter pressão mesmo quando você precisa reposicionar.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="gameplay">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Gameplay</span>
+            <h2 class="section-title">Como jogar com a build</h2>
+            <p class="section-subtitle">
+              A ideia é jogar de forma controlada: posicionar bem as skills, manter cobertura e usar a arma apenas para complementar o ciclo de dano.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <span class="chip">1</span>
+            <h3>Assault Turret</h3>
+            <p>É a base do setup. Segura corredor, pune rushers, ajuda a travar avanço inimigo e mantém dano estável o tempo inteiro.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">2</span>
+            <h3>Não quebre sua cobertura</h3>
+            <p>A build é ofensiva, mas não é build de correr sem pensar. Use pressão com disciplina e avance só quando o campo estiver controlado.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">3</span>
+            <h3>Mantenha consistência</h3>
+            <p>É melhor manter dano contínuo e seguro do que forçar jogadas e morrer cedo em lendária, raid ou incursão.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="variacoes">
+      <div class="container grid-2">
+        <article class="card">
+          <span class="chip">Rotação</span>
+          <ul class="list">
+            <li>Abra a luta posicionando a turret em altura ou bom ângulo</li>
+            <li>Solte o drone no alvo mais perigoso ou mais distante</li>
+            <li>Use a arma para manter Combined Arms ativo</li>
+            <li>Reposicione suas skills sempre que a luta avançar</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Dica prática</span>
+          <ul class="list">
+            <li>Em Lendária, valorize cobertura e paciência</li>
+            <li>Em mundo aberto, a build é excelente para limpar eventos rápido</li>
+            <li>No Countdown, evite depender dela em áreas com jammer constante</li>
+            <li>Se o time já tiver muito DPS vermelho, ela encaixa muito bem</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="onde-usar">
+      <div class="container grid-2">
+        <article class="card">
+          <span class="chip">Variação</span>
+          <h3>Mais dano bruto</h3>
+          <ul class="list">
+            <li>Trocar uma peça por <strong>Waveform</strong></li>
+            <li>Usar <strong>Glass Cannon</strong></li>
+            <li>Melhor para quem já conhece bem as missões</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Variação</span>
+          <h3>Mais conforto</h3>
+          <ul class="list">
+            <li>Manter <strong>Kinetic Momentum</strong></li>
+            <li>Colocar um pouco de <strong>Armor Regen</strong></li>
+            <li>Versão ótima para solo e farm longo</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Com essa build de Skill + DPS da para se divertir jogando.</h2>
+          <p>
+            A próxima evolução natural é testar outras builds de acordo com as peças que você for conseguindo, vale a pena experimentar e adaptar o estilo de jogo. O importante é se divertir e aproveitar o conteúdo endgame do jogo.
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="builds.html">Voltar para Builds</a>
+            <a class="btn btn-secondary" href="index.html">Ir para Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <strong>Agent Hub Division 2</strong>
+        <span class="footer-copy">
+          &copy; 2026 Todos os direitos reservados.
+        </span>
+      </div>
+      <div class="footer-links">
+        <a href="builds.html">Builds</a>
+        <a href="builds-dps.html">Hub DPS</a>
+        <a href="exoticas.html">Exóticas</a>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="preview">
+  </div>
+
+</body>
+</html>
