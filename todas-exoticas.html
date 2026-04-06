@@ -3,17 +3,14 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Todas as Exóticas | Agent Hub Division 2</title>
-  <meta name="description" content="Portal The Division 2."/>
+  <title>Todas as Exóticas de The Division 2 | Armas e Equipamentos Exóticos</title>
+  <meta name="description" content="Catálogo completo de exóticas de The Division 2, com armas e equipamentos exóticos organizados por tipo, incluindo talento, função e melhor contexto de uso no endgame.">
 
-  <!-- Fonts -->
   <link rel="icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body class="page-exoticas">
@@ -31,186 +28,388 @@
         </span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
+        ☰
+      </button>
 
       <nav class="menu" id="mainMenu">
         <a href="index.html">Home</a>
         <a href="builds.html">Builds</a>
-        <a href="raides.html">Raides</a>
-        <a href="incursao.html">Incursão</a>
         <a href="exoticas.html" class="active">Exóticas</a>
-        <a href="colecionaveis.html">Colecionáveis</a>
-        <a href="historia.html">História</a>
+        <a href="raides.html">Raides</a>
         <a href="lendarias.html">Lendárias</a>
       </nav>
     </div>
   </header>
 
   <main>
-
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">Catálogo completo | Organização por atividade</span>
-          <h1>Todas as <span class="accent">Exóticas</span></h1>
+          <span class="eyebrow">Catálogo completo | Armas e equipamentos exóticos</span>
+          <h1>Todas as <span class="accent">Exóticas</span> de The Division 2</h1>
           <p>
-            Este catálogo reúne as principais exóticas de The Division 2 organizadas por tipo de atividade. As mais importantes do endgame já possuem páginas completas; as demais estão listadas aqui para consulta rápida e futura expansão do portal.
+            Este catálogo reúne armas e equipamentos exóticos do jogo em um só lugar, organizados por tipo e pensados para consulta rápida. Aqui você encontra uma visão geral de talento, função, contexto de uso e ligação com builds, raids, incursão, lendárias e outros conteúdos do endgame.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#raids">Raids</a>
-            <a class="btn btn-secondary" href="#loot-pool">Loot Pool</a>
+            <a class="btn btn-primary" href="#armas-exoticas">Ver armas exóticas</a>
+            <a class="btn btn-secondary" href="#equipamentos-exoticos">Ver equipamentos exóticos</a>
           </div>
         </div>
 
         <aside class="panel hero-panel">
-          <span class="chip">Navegação</span>
-          <h3>Seções</h3>
+          <span class="chip">Resumo rápido</span>
+          <h3>Como usar este catálogo</h3>
           <div class="mini-grid">
-            <div class="mini-card"><strong>Raids</strong><span>Dark Hours / Iron Horse</span></div>
-            <div class="mini-card"><strong>Incursão</strong><span>Paradise Lost</span></div>
-            <div class="mini-card"><strong>Lendárias</strong><span>Missões PvE</span></div>
-            <div class="mini-card"><strong>Geral</strong><span>Loot Pool / Projetos</span></div>
+            <div class="mini-card">
+              <strong>Armas</strong>
+              <span>Raid, incursão, lendária e outras fontes</span>
+            </div>
+            <div class="mini-card">
+              <strong>Equipamentos</strong>
+              <span>Mochilas, máscaras, luvas e mais</span>
+            </div>
+            <div class="mini-card">
+              <strong>Talentos</strong>
+              <span>Resumo rápido de cada item</span>
+            </div>
+            <div class="mini-card">
+              <strong>Builds</strong>
+              <span>Ligação com o restante do portal</span>
+            </div>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- RAIDES -->
-    <section class="section" id="raids">
+    <!-- COMO USAR -->
+    <section class="section">
+      <div class="container grid-3">
+        <article class="card">
+          <span class="chip">Armas</span>
+          <h3>Exóticas de combate</h3>
+          <p>
+            Consulte rapidamente armas exóticas organizadas por tipo, origem e utilidade no endgame.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="chip">Equipamentos</span>
+          <h3>Peças exóticas</h3>
+          <p>
+            Veja mochilas, máscaras, coletes, luvas, coldres e joelheiras exóticas com visão geral de talento e função.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="chip">Páginas próprias</span>
+          <h3>Guias detalhados</h3>
+          <p>
+            Quando houver página individual, o catálogo funciona como ponto de entrada para aprofundar o farm e o uso da exótica.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXÓTICAS EM DESTAQUE -->
+    <section class="section">
       <div class="container">
         <div class="section-header">
           <div>
-            <span class="section-kicker">Raids</span>
-            <h2 class="section-title">Exóticas de Raid</h2>
-            <p class="section-subtitle">Itens ligados a Operation Dark Hours e Iron Horse.</p>
+            <span class="section-kicker">Destaque</span>
+            <h2 class="section-title">Exóticas mais importantes do portal</h2>
+            <p class="section-subtitle">
+              Estas são as armas exóticas que já fazem mais sentido dentro da estrutura atual do site e que se conectam diretamente com raids, incursão, lendárias e builds.
+            </p>
           </div>
         </div>
 
         <div class="grid-3">
           <a class="card" href="eagle-bearer.html">
-            <div class="thumb"><span>EAGLE BEARER</span></div>
-            <span class="chip">Dark Hours</span>
+            <span class="chip">Raid</span>
             <h3>Eagle Bearer</h3>
+            <p>Exótica clássica da Dark Hours, muito ligada a builds DPS e progressão em raids.</p>
           </a>
 
-          <a class="card" href="ravenous.html">
-            <div class="thumb"><span>RAVENOUS</span></div>
-            <span class="chip">Iron Horse</span>
-            <h3>Ravenous</h3>
-          </a>
-
-          <a class="card" href="regulus.html">
-            <div class="thumb"><span>REGULUS</span></div>
-            <span class="chip">Projeto</span>
-            <h3>Regulus</h3>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- INCURSAO -->
-    <section class="section" id="incursao">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-kicker">Incursão</span>
-            <h2 class="section-title">Paradise Lost</h2>
-          </div>
-        </div>
-
-        <div class="grid-3">
           <a class="card" href="ouroboros.html">
-            <div class="thumb"><span>OUROBOROS</span></div>
             <span class="chip">Incursão</span>
             <h3>Ouroboros</h3>
+            <p>Uma das armas mais desejadas do endgame atual, com foco em burst e curta distância.</p>
+          </a>
+
+          <a class="card" href="bighorn.html">
+            <span class="chip">Lendária</span>
+            <h3>Bighorn</h3>
+            <p>Arma ligada a missões lendárias e ao lado mais disciplinado do PvE avançado.</p>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- LENDARIAS -->
-    <section class="section" id="lendarias">
+    <!-- ARMAS EXÓTICAS -->
+    <section class="section" id="armas-exoticas">
       <div class="container">
         <div class="section-header">
           <div>
-            <span class="section-kicker">Lendárias</span>
-            <h2 class="section-title">Missões Lendárias</h2>
+            <span class="section-kicker">Armas exóticas</span>
+            <h2 class="section-title">Catálogo por tipo de arma</h2>
+            <p class="section-subtitle">
+              Aqui ficam as armas exóticas organizadas por função, origem e melhor contexto de uso.
+            </p>
           </div>
         </div>
 
         <div class="grid-3">
-          <a class="card" href="bighorn.html">
-            <div class="thumb"><span>BIGHORN</span></div>
-            <span class="chip">Lendária</span>
+          <article class="card">
+            <span class="chip">AR Exótica</span>
+            <h3>Eagle Bearer</h3>
+            <p>Fuzil de assalto icônico de raid, muito associado a builds DPS e progressão em Dark Hours.</p>
+            <ul class="list">
+              <li><strong>Origem:</strong> Raid Dark Hours</li>
+              <li><strong>Função:</strong> DPS de raid</li>
+              <li><strong>Ideal para:</strong> grupos ofensivos</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="chip">Rifle Exótico</span>
+            <h3>Ravenous</h3>
+            <p>Exótica ligada à Iron Horse, com perfil técnico e grande valor para o lado mais avançado do endgame.</p>
+            <ul class="list">
+              <li><strong>Origem:</strong> Raid Iron Horse</li>
+              <li><strong>Função:</strong> pressão técnica</li>
+              <li><strong>Ideal para:</strong> grupo organizado</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="chip">Pistola Exótica</span>
+            <h3>Regulus</h3>
+            <p>Uma das exóticas mais interessantes em termos de progressão, excelente para páginas em formato checklist.</p>
+            <ul class="list">
+              <li><strong>Origem:</strong> Progressão Iron Horse</li>
+              <li><strong>Função:</strong> burst / precisão</li>
+              <li><strong>Ideal para:</strong> builds de headshot e boss damage</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="chip">SMG Exótica</span>
+            <h3>Ouroboros</h3>
+            <p>Uma das armas mais fortes do meta atual para curta distância, muito usada em builds agressivas.</p>
+            <ul class="list">
+              <li><strong>Origem:</strong> Paradise Lost</li>
+              <li><strong>Função:</strong> burst agressivo</li>
+              <li><strong>Ideal para:</strong> builds SMG e setups ofensivos</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="chip">AR Exótica</span>
             <h3>Bighorn</h3>
-          </a>
+            <p>Arma exótica ligada a missões lendárias, reforçando o lado mais avançado do PvE do portal.</p>
+            <ul class="list">
+              <li><strong>Origem:</strong> Missões lendárias</li>
+              <li><strong>Função:</strong> PvE avançado</li>
+              <li><strong>Ideal para:</strong> progressão e lendária</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="chip">Expansão futura</span>
+            <h3>Outras armas exóticas</h3>
+            <p>Este espaço pode receber futuras armas exóticas do catálogo completo, mesmo que ainda não tenham página própria.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- LOOT POOL -->
-    <section class="section" id="loot-pool">
+    <!-- EQUIPAMENTOS EXÓTICOS -->
+    <section class="section" id="equipamentos-exoticos">
       <div class="container">
         <div class="section-header">
           <div>
-            <span class="section-kicker">Outras</span>
-            <h2 class="section-title">Loot Pool / Projetos</h2>
-            <p class="section-subtitle">Exóticas populares que podem virar páginas no futuro.</p>
+            <span class="section-kicker">Equipamentos exóticos</span>
+            <h2 class="section-title">Mochilas, máscaras, luvas e outras peças</h2>
+            <p class="section-subtitle">
+              Esta área é o grande diferencial do catálogo: além das armas, ela inclui as peças exóticas mais usadas em builds solo, híbridas, PvE, PvP e grupo.
+            </p>
           </div>
         </div>
 
-        <div class="grid-4">
+        <div class="grid-3">
           <article class="card">
-            <div class="thumb"><span>SCORPIO</span></div>
-            <span class="chip">Shotgun</span>
-            <h3>Scorpio</h3>
+            <span class="chip">Mochila Exótica</span>
+            <h3>Memento</h3>
+            <p>Mochila extremamente versátil, ótima para solo, híbridas e builds agressivas com sustain.</p>
+            <ul class="list">
+              <li><strong>Talento:</strong> bônus progressivos por troféus</li>
+              <li><strong>Função:</strong> sustain e crescimento de poder</li>
+              <li><strong>Ideal para:</strong> solo, híbridas e progressão</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="thumb"><span>CAPACITOR</span></div>
-            <span class="chip">Skill</span>
-            <h3>Capacitor</h3>
+            <span class="chip">Máscara Exótica</span>
+            <h3>Coyote’s Mask</h3>
+            <p>Uma das máscaras mais valiosas do jogo, muito forte para grupo e excelente em builds críticas.</p>
+            <ul class="list">
+              <li><strong>Talento:</strong> bônus por distância</li>
+              <li><strong>Função:</strong> suporte ofensivo</li>
+              <li><strong>Ideal para:</strong> DPS e grupo</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="thumb"><span>ST. ELMO</span></div>
-            <span class="chip">AR</span>
-            <h3>St. Elmo’s Engine</h3>
+            <span class="chip">Máscara Exótica</span>
+            <h3>Catharsis</h3>
+            <p>Máscara voltada para sobrevivência e conforto em builds que precisam segurar mais pressão.</p>
+            <ul class="list">
+              <li><strong>Talento:</strong> cura / sustain situacional</li>
+              <li><strong>Função:</strong> estabilidade</li>
+              <li><strong>Ideal para:</strong> solo, PvP e híbridas</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="thumb"><span>MANTIS</span></div>
-            <span class="chip">Sniper</span>
-            <h3>Mantis</h3>
+            <span class="chip">Mochila Exótica</span>
+            <h3>NinjaBike Messenger Bag</h3>
+            <p>Mochila focada em combinações híbridas e setups criativos com múltiplos bônus de set.</p>
+            <ul class="list">
+              <li><strong>Talento:</strong> ativa bônus extras de set</li>
+              <li><strong>Função:</strong> flexibilidade</li>
+              <li><strong>Ideal para:</strong> híbridas e builds experimentais</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="chip">Coldre Exótico</span>
+            <h3>Waveform</h3>
+            <p>Peça muito conhecida em builds de skill, com foco em elevar o dano das habilidades.</p>
+            <ul class="list">
+              <li><strong>Talento:</strong> amplificação de skill damage</li>
+              <li><strong>Função:</strong> skill DPS</li>
+              <li><strong>Ideal para:</strong> turret, drone e builds de habilidade</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="chip">Luvas Exóticas</span>
+            <h3>BTSU Datagloves</h3>
+            <p>Luvas muito valiosas em setups de suporte e skill, especialmente em composições coordenadas.</p>
+            <ul class="list">
+              <li><strong>Talento:</strong> reforço e reinício de skills</li>
+              <li><strong>Função:</strong> suporte técnico</li>
+              <li><strong>Ideal para:</strong> healer, grupo e utilidade</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- EXÓTICAS POR ESTILO -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Por estilo</span>
+            <h2 class="section-title">Exóticas mais úteis por tipo de build</h2>
+            <p class="section-subtitle">
+              Esta leitura rápida ajuda o jogador a sair do catálogo e já pensar em aplicação prática.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <span class="chip">DPS</span>
+            <h3>Melhores para dano</h3>
+            <ul class="list">
+              <li>Ouroboros</li>
+              <li>Eagle Bearer</li>
+              <li>Coyote’s Mask</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="chip">Skill</span>
+            <h3>Melhores para habilidade</h3>
+            <ul class="list">
+              <li>Waveform</li>
+              <li>BTSU Datagloves</li>
+              <li>Exóticas de suporte técnico</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="chip">Híbrida / Solo</span>
+            <h3>Melhores para conforto</h3>
+            <ul class="list">
+              <li>Memento</li>
+              <li>Catharsis</li>
+              <li>NinjaBike Messenger Bag</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
     <section class="cta">
       <div class="container">
         <div class="cta-box">
-          <h2>Seu catálogo de exóticas está pronto para escalar</h2>
+          <h2>Agora o catálogo completa a área de exóticas do portal</h2>
           <p>
-            Agora você pode expandir criando páginas individuais apenas para as exóticas mais relevantes, mantendo o resto organizado neste catálogo.
+            Com a vitrine principal em <strong>exoticas.html</strong> e este catálogo completo em <strong>todas-exoticas.html</strong>, o portal passa a ter uma estrutura muito mais clara para consulta, SEO e expansão futura.
           </p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="exoticas.html">Voltar</a>
+            <a class="btn btn-primary" href="exoticas.html">Voltar para Exóticas</a>
+            <a class="btn btn-secondary" href="builds.html">Ver Builds</a>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <strong>todas-exoticas.html | Agent Hub Division 2</strong><br />
-        <span class="footer-copy">Catálogo completo de exóticas.</span>
+      <div class="footer-brand">
+        <strong>Agent Hub Division 2</strong>
+        <p class="footer-text">
+          Guias completos de builds, exóticas e conteúdo endgame de The Division 2 para PvE e PvP.
+        </p>
+        <span class="footer-copy">
+          &copy; 2026 Todos os direitos reservados.
+        </span>
       </div>
-      <div>
+
+      <div class="footer-column">
+        <h4>Início</h4>
         <a href="index.html">Home</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Builds</h4>
+        <a href="builds.html">Todas as Builds</a>
+        <a href="builds-dps.html">DPS</a>
+        <a href="builds-skill.html">Skill</a>
+        <a href="builds-hibridas.html">Híbridas</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Endgame</h4>
+        <a href="raides.html">Raides</a>
+        <a href="lendarias.html">Lendárias</a>
+        <a href="incursao.html">Incursão</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Conteúdo</h4>
+        <a href="exoticas.html">Exóticas</a>
+        <a href="colecionaveis.html">Colecionáveis</a>
+        <a href="historia.html">História</a>
       </div>
     </div>
   </footer>

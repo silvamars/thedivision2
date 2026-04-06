@@ -3,229 +3,305 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Builds PvP | Agent Hub Division 2</title>
-  <meta name="description" content="Portal The Division 2."/>
+  <title>Melhores Builds PvP de The Division 2 | Zona Cega e Conflito</title>
+  <meta name="description" content="Confira as melhores builds PvP de The Division 2 para Zona Cega e Conflito, com foco em SMG, burst, sustain, controle e sobrevivência."/>
 
-  <!-- Fonts -->
   <link rel="icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-
-  <!-- CSS -->  
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page-builds">
+<body class="page-pvp">
   <div class="bg-image"></div>
   <div class="bg-overlay"></div>
   <div class="grid-bg"></div>
 
-<header class="topbar">
-  <div class="container nav">
-    <a href="index.html" class="brand">
-      <span class="brand-mark">TD2</span>
-      <span class="brand-copy">
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">TD2</span>
+        <span class="brand-copy">
+          <strong>Agent Hub Division 2</strong>
+          <span>Builds, guias e conteúdo endgame</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
+        ☰
+      </button>
+
+      <nav class="menu" id="mainMenu">
+        <a href="index.html">Home</a>
+        <a href="builds.html" class="active">Builds</a>
+        <a href="exoticas.html">Exóticas</a>
+        <a href="raides.html">Raides</a>
+        <a href="lendarias.html">Lendárias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Hub central | Zona Cega, Conflito e survivability</span>
+          <h1>Builds <span class="accent">PvP</span></h1>
+          <p>
+            As builds PvP exigem mais do que dano: posicionamento, sobrevivência, leitura de combate e tomada de decisão rápida. Esta página reúne as melhores opções para Zona Cega e Conflito, com foco em SMG, burst, sustain e controle de confronto.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#builds-meta">Ver builds em destaque</a>
+            <a class="btn btn-secondary" href="#top10">Ver Top 10</a>
+          </div>
+        </div>
+
+        <aside class="panel hero-panel">
+          <span class="chip">Resumo rápido</span>
+          <h3>Base do PvP</h3>
+          <div class="mini-grid">
+            <a class="mini-card" href="#top10">
+              <strong>SMG</strong>
+              <span>Curto alcance e burst</span>
+            </a>
+            <a class="mini-card" href="#top10">
+              <strong>Sobrevivência</strong>
+              <span>Armadura e sustain</span>
+            </a>
+            <a class="mini-card" href="#top10">
+              <strong>Crítico</strong>
+              <span>Dano rápido e pressão</span>
+            </a>
+            <a class="mini-card" href="#top10">
+              <strong>Controle</strong>
+              <span>Skills e utilidade</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="builds-meta">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Destaque da categoria</span>
+            <h2 class="section-title">Builds PvP mais relevantes</h2>
+            <p class="section-subtitle">
+              Estas são as linhas mais importantes para quem quer começar ou evoluir no PvP do portal.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="meta-tags">
+              <span class="chip">META</span>
+              <span class="chip">SMG</span>
+              <span class="chip">Burst</span>
+            </div>
+            <h3>SMG crítica</h3>
+            <p>
+              A build mais popular para pressão rápida, lutas curtas e trocas agressivas em curta distância.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="meta-tags">
+              <span class="chip">DZ</span>
+              <span class="chip">Solo</span>
+              <span class="chip">Sustain</span>
+            </div>
+            <h3>SMG com sustain</h3>
+            <p>
+              Excelente para quem joga sozinho na Zona Cega e precisa sobreviver a trocas mais longas.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="meta-tags">
+              <span class="chip">Equilíbrio</span>
+              <span class="chip">AR</span>
+              <span class="chip">Controle</span>
+            </div>
+            <h3>AR PvP equilibrada</h3>
+            <p>
+              Boa para médio alcance e para jogadores que preferem consistência a explosão pura.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <article class="card">
+          <span class="chip">Diferença</span>
+          <h3>PvP não é PvE</h3>
+          <ul class="list">
+            <li>Jogadores reagem e se adaptam</li>
+            <li>Erro de posicionamento custa caro</li>
+            <li>Sobrevivência vale tanto quanto dano</li>
+            <li>Tempo de reação muda tudo</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Base</span>
+          <h3>O que define uma boa build PvP</h3>
+          <ul class="list">
+            <li>Dano rápido e consistente</li>
+            <li>Capacidade de sobreviver ao trade</li>
+            <li>Mobilidade e controle de distância</li>
+            <li>Sinergia com seu estilo de jogo</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Erro comum</span>
+          <h3>O que mais faz perder fight</h3>
+          <ul class="list">
+            <li>Usar build PvE no PvP</li>
+            <li>Falta de sustain</li>
+            <li>Posicionamento ruim</li>
+            <li>Entrar em fight sem vantagem</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="top10">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Ranking</span>
+            <h2 class="section-title">Top 10 Builds PvP</h2>
+            <p class="section-subtitle">
+              Um resumo das linhas mais fortes para Zona Cega e Conflito, cobrindo burst, sustain, médio alcance e variações anti-meta.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <span class="chip">#1</span>
+            <h3>SMG crítica (Meta)</h3>
+            <p>Build mais popular para PvP, focada em burst rápido e pressão constante.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">#2</span>
+            <h3>SMG com sustain</h3>
+            <p>Versão mais segura para sobreviver trocas diretas.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">#3</span>
+            <h3>AR PvP equilibrada</h3>
+            <p>Boa para quem prefere médio alcance e controle.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">#4</span>
+            <h3>Shotgun agressiva</h3>
+            <p>Explosiva em curto alcance, mas exige timing perfeito.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">#5</span>
+            <h3>Tank PvP</h3>
+            <p>Alta sobrevivência para segurar pressão.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">#6</span>
+            <h3>Skill PvP</h3>
+            <p>Controle e utilidade para bagunçar fights.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">#7</span>
+            <h3>Rifle PvP</h3>
+            <p>Para quem joga mais recuado e técnico.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">#8</span>
+            <h3>Híbrida PvP</h3>
+            <p>Dano + sobrevivência em equilíbrio.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">#9</span>
+            <h3>Build anti-meta</h3>
+            <p>Opções criativas para surpreender adversários.</p>
+          </article>
+
+          <article class="card">
+            <span class="chip">#10</span>
+            <h3>Solo DZ build</h3>
+            <p>Focada em sobreviver sozinho na Zona Cega.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Agora seu sistema de builds está completo</h2>
+          <p>
+            Com DPS, Skill, Híbridas e PvP, seu portal cobre praticamente todos os estilos de jogo do The Division 2.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="builds.html">Ver todas as builds</a>
+            <a class="btn btn-secondary" href="index.html">Voltar para Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
         <strong>Agent Hub Division 2</strong>
-        <span>Builds, guias e conteúdo endgame</span>
-      </span>
-    </a>
+        <p class="footer-text">
+          Guias completos de builds, exóticas e conteúdo endgame de The Division 2 para PvE e PvP.
+        </p>
+        <span class="footer-copy">&copy; 2026 Todos os direitos reservados.</span>
+      </div>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
-      ☰
-    </button>
+      <div class="footer-column">
+        <h4>Início</h4>
+        <a href="index.html">Home</a>
+      </div>
 
-    <nav class="menu" id="mainMenu">
-      <a href="index.html">Home</a>
-      <a href="builds.html" class="active">Builds</a>
-      <a href="raides.html">Raides</a>
-      <a href="incursao.html">Incursão</a>
-      <a href="exoticas.html">Exóticas</a>
-      <a href="colecionaveis.html">Colecionáveis</a>
-      <a href="historia.html">História</a>
-      <a href="lendarias.html">Lendárias</a>
-    </nav>
-  </div>
-</header>
+      <div class="footer-column">
+        <h4>Builds</h4>
+        <a href="builds.html">Todas as Builds</a>
+        <a href="builds-dps.html">DPS</a>
+        <a href="builds-skill.html">Skill</a>
+        <a href="builds-hibridas.html">Híbridas</a>
+      </div>
 
-<main>
+      <div class="footer-column">
+        <h4>Endgame</h4>
+        <a href="raides.html">Raides</a>
+        <a href="lendarias.html">Lendárias</a>
+        <a href="incursao.html">Incursão</a>
+      </div>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">Top 10 | Zona Cega | Conflito</span>
-      <h1>Builds <span class="accent">PvP</span> em The Division 2</h1>
-      <p>
-        As builds PvP exigem mais do que dano: posicionamento, sobrevivência, leitura de combate e tomada de decisão rápida. Esta página reúne as melhores opções para Zona Cega e Conflito, com foco em SMG, burst, sustain e controle de confronto.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#top10">Ver Top 10</a>
-        <a class="btn btn-secondary" href="builds-dps.html">Ver Builds PvE</a>
+      <div class="footer-column">
+        <h4>Conteúdo</h4>
+        <a href="exoticas.html">Exóticas</a>
+        <a href="colecionaveis.html">Colecionáveis</a>
+        <a href="historia.html">História</a>
       </div>
     </div>
+  </footer>
 
-    <aside class="panel hero-panel">
-      <span class="chip">Resumo rápido</span>
-      <h3>Base do PvP</h3>
-      <div class="mini-grid">
-        <a class="mini-card" href="#top10">
-          <strong>SMG</strong>
-          <span>Curto alcance e burst</span>
-        </a>
-        <a class="mini-card" href="#top10">
-          <strong>Sobrevivência</strong>
-          <span>Armadura e sustain</span>
-        </a>
-        <a class="mini-card" href="#top10">
-          <strong>Crítico</strong>
-          <span>Dano rápido e pressão</span>
-        </a>
-        <a class="mini-card" href="#top10">
-          <strong>Controle</strong>
-          <span>Skills e utilidade</span>
-        </a>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid-3">
-    <article class="card">
-      <span class="chip">Diferença</span>
-      <h3>PvP não é PvE</h3>
-      <ul class="list">
-        <li>Jogadores reagem e se adaptam</li>
-        <li>Erro de posicionamento custa caro</li>
-        <li>Sobrevivência vale tanto quanto dano</li>
-        <li>Tempo de reação muda tudo</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Base</span>
-      <h3>O que define uma boa build PvP</h3>
-      <ul class="list">
-        <li>Dano rápido e consistente</li>
-        <li>Capacidade de sobreviver ao trade</li>
-        <li>Mobilidade e controle de distância</li>
-        <li>Sinergia com seu estilo de jogo</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Erro comum</span>
-      <h3>O que mais faz perder fight</h3>
-      <ul class="list">
-        <li>Usar build PvE no PvP</li>
-        <li>Falta de sustain</li>
-        <li>Posicionamento ruim</li>
-        <li>Entrar em fight sem vantagem</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<section class="section" id="top10">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-kicker">Ranking</span>
-      <h2 class="section-title">Top 10 Builds PvP</h2>
-    </div>
-
-    <div class="grid-2">
-
-      <article class="card">
-        <span class="chip">#1</span>
-        <h3>SMG Crítica (Meta)</h3>
-        <p>Build mais popular para PvP, focada em burst rápido e pressão constante.</p>
-      </article>
-
-      <article class="card">
-        <span class="chip">#2</span>
-        <h3>SMG com sustain</h3>
-        <p>Versão mais segura para sobreviver trocas diretas.</p>
-      </article>
-
-      <article class="card">
-        <span class="chip">#3</span>
-        <h3>AR PvP equilibrada</h3>
-        <p>Boa para quem prefere médio alcance e controle.</p>
-      </article>
-
-      <article class="card">
-        <span class="chip">#4</span>
-        <h3>Shotgun agressiva</h3>
-        <p>Explosiva em curto alcance, mas exige timing perfeito.</p>
-      </article>
-
-      <article class="card">
-        <span class="chip">#5</span>
-        <h3>Tank PvP</h3>
-        <p>Alta sobrevivência para segurar pressão.</p>
-      </article>
-
-      <article class="card">
-        <span class="chip">#6</span>
-        <h3>Skill PvP</h3>
-        <p>Controle e utilidade para bagunçar fights.</p>
-      </article>
-
-      <article class="card">
-        <span class="chip">#7</span>
-        <h3>Rifle PvP</h3>
-        <p>Para quem joga mais recuado e técnico.</p>
-      </article>
-
-      <article class="card">
-        <span class="chip">#8</span>
-        <h3>Híbrida PvP</h3>
-        <p>Dano + sobrevivência em equilíbrio.</p>
-      </article>
-
-      <article class="card">
-        <span class="chip">#9</span>
-        <h3>Build anti-meta</h3>
-        <p>Opções criativas para surpreender adversários.</p>
-      </article>
-
-      <article class="card">
-        <span class="chip">#10</span>
-        <h3>Solo DZ build</h3>
-        <p>Focada em sobreviver sozinho na Zona Cega.</p>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container">
-    <div class="cta-box">
-      <h2>Agora seu sistema de builds está completo</h2>
-      <p>
-        Com DPS, Skill, Híbridas e PvP, seu portal cobre praticamente todos os estilos de jogo do The Division 2.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="builds.html">Ver todas builds</a>
-        <a class="btn btn-secondary" href="index.html">Voltar para Home</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="container footer-grid">
-    <div>
-      <strong>builds-pvp.html | Agent Hub Division 2</strong><br />
-      <span class="footer-copy">Hub principal de builds PvP para Zona Cega e Conflito.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-
+  <script src="js/main.js" defer></script>
 </body>
 </html>
