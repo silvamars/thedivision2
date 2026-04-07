@@ -63,7 +63,19 @@ a {
 }
 
 .page-raides .bg-image {
-  background-image: url('../img/division-raides.webp');
+  background-image: url('../img/raids/the-division2-raides.webp');
+  background-position: center 50%;
+  background-size: 93%;
+}
+
+.page-dark-hours .bg-image {
+  background-image: url('../img/raids/the-division2-dark-hours.jpg');
+  background-position: center 50%;
+  background-size: 93%;
+}
+
+.page-iron-horse .bg-image {
+  background-image: url('../img/raids/the-division2-iron-horse-arena4.jpg');
   background-position: center 50%;
   background-size: 93%;
 }
@@ -181,6 +193,37 @@ a {
     );
 }
 
+.page-dark-hours .bg-overlay {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 11, 16, 0.28) 0%,
+      rgba(8, 11, 16, 0.38) 40%,
+      rgba(8, 11, 16, 0.60) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(8, 11, 16, 0.45) 0%,
+      rgba(8, 11, 16, 0.12) 45%,
+      rgba(8, 11, 16, 0.40) 100%
+    );
+}
+
+.page-iron-hours .bg-overlay {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 11, 16, 0.28) 0%,
+      rgba(8, 11, 16, 0.38) 40%,
+      rgba(8, 11, 16, 0.60) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(8, 11, 16, 0.45) 0%,
+      rgba(8, 11, 16, 0.12) 45%,
+      rgba(8, 11, 16, 0.40) 100%
+    );
+}
 .page-incursao .bg-overlay {
   background:
     linear-gradient(
