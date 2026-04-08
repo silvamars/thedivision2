@@ -20,6 +20,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#build-smg-critica,
+#build-smg-sustain,
+#build-ar-pvp {
+  scroll-margin-top: 110px;
+}
+
 body {
   margin: 0;
   color: var(--text);
@@ -549,8 +555,19 @@ a {
 }
 
 .hero-grid {
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 40px;
+  align-items: start;
+}
+
+.hero-grid > div {
+  min-width: 0;
+}
+
+.hero-grid h1 {
+  line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 
 .grid-2 {
@@ -587,7 +604,8 @@ h4 {
 }
 
 .hero h1 .accent {
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .hero p {
@@ -792,6 +810,8 @@ h4 {
 .hero-panel h3 {
   font-size: 1.35rem;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .mini-card {
@@ -913,9 +933,12 @@ h4 {
 
 .thumb-image {
   position: relative;
-  height: 300px;
-  border-radius: 14px;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
   overflow: hidden;
+  margin-bottom: 12px;
+  background: #0b0d12;
 }
 
 .thumb-image img {
@@ -925,22 +948,6 @@ h4 {
   object-position: center center;
   transition: transform .4s ease;
   background: #0b0d12;
-}
-
-.thumb img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.4s ease;
-}
-
-.thumb-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .thumb-video {
@@ -1145,6 +1152,12 @@ footer {
   .grid-3,
   .grid-2 {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2029,6 +2042,48 @@ footer {
   text-transform: uppercase;
   letter-spacing: .08em;
   color: rgba(255,255,255,.62);
+}
+
+.card-link {
+  display: block;
+  cursor: pointer;
+}
+
+.card-link::after {
+  content: "Ver no Top 10 →";
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  opacity: 0.85;
+  transition: transform 0.25s ease;
+}
+
+.card-link:hover::after {
+  transform: translateX(4px);
+}
+
+.card-link:hover {
+  transform: translateY(-4px);
+}
+
+.card-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.85);
+  outline-offset: 4px;
+  border-radius: 18px;
+}
+
+.card-link .section-title,
+.card-link h3,
+.card-link p,
+.card-link .chip,
+.card-link li {
+  color: inherit;
+}
+
+.card-link:hover::after {
+  transform: translateX(4px);
+  opacity: 1;
 }
 
 .card-spec {
