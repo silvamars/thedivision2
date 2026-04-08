@@ -919,76 +919,39 @@ h4 {
 }
 
 /* =========================
-   THUMBS
+   THUMBS (PADRÃO UNIFICADO)
 ========================= */
 
-.thumb {
-  position: relative;
-  width: 100%;
-  height: 180px;
-  border-radius: 14px;
-  overflow: hidden;
-  margin-bottom: 16px;
-}
-
+.thumb,
 .thumb-image {
   position: relative;
   width: 100%;
-  height: 220px;
+  aspect-ratio: 16 / 9;
   border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   background: #0b0d12;
 }
 
+.thumb img,
 .thumb-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform .4s ease;
-  background: #0b0d12;
+  transition: transform 0.4s ease;
+  image-rendering: auto;
 }
 
-.thumb-video {
-  position: relative;
-  padding-top: 56.25%;
+/* hover padrão */
+.card:hover .thumb img,
+.card:hover .thumb-image img {
+  transform: scale(1.05);
 }
 
-.thumb-video iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.thumb.thumb-video {
-  height: auto; /* sobrescreve os 180px */
-  aspect-ratio: 16 / 9;
-  padding-top: 0;
-}
-
-.thumb.thumb-video iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.thumb-video::after {
-  content: "▶";
-  position: absolute;
-  pointer-events: none;
-  font-size: 2rem;
-  color: white;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0,0,0,0.3);
-}
-
-.thumb::after {
+/* overlay */
+.thumb::after,
+.thumb-image::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -1000,7 +963,9 @@ h4 {
   );
 }
 
-.thumb-label {
+/* label */
+.thumb span,
+.thumb-image span {
   position: absolute;
   bottom: 10px;
   left: 12px;
@@ -1010,6 +975,12 @@ h4 {
   letter-spacing: 0.12em;
   color: rgba(255, 255, 255, 0.88);
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.thumb.contain img,
+.thumb-image.contain img {
+  object-fit: contain;
+  background: #0b0d12;
 }
 
 /* LIGHTBOX */
@@ -1288,10 +1259,6 @@ footer {
     min-width: 0;
   }
 
-  .thumb {
-    height: 180px;
-  }
-
   .section-header {
     align-items: flex-start;
     flex-direction: column;
@@ -1303,10 +1270,6 @@ footer {
     background-size: cover;
     background-position: center center !important;
     transform: scale(1.01);
-  }
-
-  .thumb-image{
-    height: 200px;
   }
 
   .site-footer {
@@ -1343,10 +1306,6 @@ footer {
   .hero p {
     font-size: 0.96rem;
     line-height: 1.7;
-  }
-
-  .thumb {
-    height: 170px;
   }
 
   .panel,
