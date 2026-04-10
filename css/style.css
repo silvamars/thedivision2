@@ -919,28 +919,63 @@ h4 {
 }
 
 /* =========================
-   THUMBS (PADRÃO UNIFICADO)
+   THUMBS - PADRÃO GLOBAL
 ========================= */
 
 .thumb,
 .thumb-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 16px;
+  border-radius: 14px;
   overflow: hidden;
-  margin-bottom: 16px;
   background: #0b0d12;
 }
 
-.thumb img,
-.thumb-image img {
+/* Alturas padrão (ajuste fino se quiser) */
+.thumb {
+  height: 180px;
+}
+
+.thumb-image {
+  height: 260px;
+}
+
+/* =========================
+   MODO COVER (CAPA / CARDS)
+========================= */
+
+.thumb-cover img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.4s ease;
-  image-rendering: auto;
+  transition: transform .4s ease;
+}
+
+/* =========================
+   MODO CONTAIN (EQUIPAMENTOS)
+========================= */
+
+.thumb-contain img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 12px;
+  background: #0b0d12;
+  transition: transform .3s ease;
+}
+
+/* =========================
+   HOVER (efeito premium)
+========================= */
+
+.thumb-cover:hover img {
+  transform: scale(1.05);
+}
+
+.thumb-contain:hover img {
+  transform: scale(1.03);
 }
 
 /* hover padrão */
