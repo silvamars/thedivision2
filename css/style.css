@@ -69,9 +69,7 @@ a {
 }
 
 .page-raides .bg-image {
-  background-image: url('../img/raids/the-division2-raides.webp');
-  background-position: center 50%;
-  background-size: 93%;
+  background-image: url('../img/raids/The-Division-2-Operation-Iron-Horse.jpg');
 }
 
 .page-dark-hours .bg-image {
@@ -94,6 +92,12 @@ a {
 }
 
 .page-exoticas .bg-image {
+  background-image: url('../img/division-exoticas.jpg');
+  background-position: 58% 42%;
+  background-size: 106%;
+}
+
+.page-equipamentos-exoticos .bg-image {
   background-image: url('../img/division-exoticas.jpg');
   background-position: 58% 42%;
   background-size: 106%;
@@ -246,6 +250,22 @@ a {
 }
 
 .page-exoticas .bg-overlay {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 11, 16, 0.30) 0%,
+      rgba(8, 11, 16, 0.40) 40%,
+      rgba(8, 11, 16, 0.66) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(8, 11, 16, 0.50) 0%,
+      rgba(8, 11, 16, 0.16) 42%,
+      rgba(8, 11, 16, 0.42) 100%
+    );
+}
+
+.page-equipamentos-exoticos .bg-overlay {
   background:
     linear-gradient(
       180deg,
@@ -852,6 +872,17 @@ h4 {
   line-height: 1.8;
 }
 
+.card .thumb,
+.card .thumb-image,
+.card .thumb-video {
+  margin-bottom: 14px;
+}
+
+.card .chip {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
 /* =========================
    SEÇÕES
 ========================= */
@@ -928,6 +959,7 @@ h4 {
   width: 100%;
   border-radius: 14px;
   overflow: hidden;
+  object-fit: contain;
   background: #0b0d12;
 }
 
@@ -950,6 +982,7 @@ h4 {
   object-fit: cover;
   object-position: center;
   transition: transform .4s ease;
+  display: block;
 }
 
 /* =========================
@@ -964,6 +997,7 @@ h4 {
   padding: 12px;
   background: #0b0d12;
   transition: transform .3s ease;
+  display: block;
 }
 
 /* =========================
@@ -988,7 +1022,8 @@ h4 {
 .thumb::after,
 .thumb-image::after {
   content: "";
-  position: absolute;
+  position: relative;
+  z-index: 2;
   inset: 0;
   background: linear-gradient(
     to top,
@@ -1018,6 +1053,49 @@ h4 {
   background: #0b0d12;
 }
 
+/* =========================
+   THUMB VIDEO
+========================= */
+
+.thumb-video {
+  position: relative;
+  width: 100%;
+  height: 180px; /* igual ao .thumb */
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0b0d12;
+}
+
+.thumb-video iframe,
+.thumb-video video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* hover igual aos cards de imagem */
+.card:hover .thumb-video iframe,
+.card:hover .thumb-video video {
+  transform: scale(1.02);
+  transition: transform 0.35s ease;
+}
+
+.thumb-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.08),
+    rgba(0, 0, 0, 0.02)
+  );
+}
+
 /* LIGHTBOX */
 
 .lightbox {
@@ -1043,6 +1121,22 @@ h4 {
   animation: zoomIn 0.25s ease;
 }
 
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.2s;
+}
+
+.lightbox-close:hover {
+  color: #ff6a13;
+  transform: scale(1.1);
+}
+
 @keyframes zoomIn {
   from {
     transform: scale(0.9);
@@ -1056,7 +1150,253 @@ h4 {
 
 .lightbox-trigger {
   cursor: zoom-in;
+  position: relative;
+  z-index: 1;
 }
+
+.exoticas-grid {
+  gap: 20px;
+  align-items: start;
+}
+
+.exoticas-grid > .card {
+  align-self: start;
+}
+
+.exotica-card-premium {
+  padding: 18px;
+  border-radius: 24px;
+  align-self: start;
+}
+
+.exotica-card-premium:hover {
+  transform: translateY(-8px);
+}
+
+.card-link-area {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.exotica-thumb {
+  height: 158px;
+  margin-bottom: 14px;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at top center, rgba(255, 106, 19, 0.10), transparent 55%),
+    #0b0d12;
+}
+
+.exotica-thumb img {
+  transition: transform .35s ease;
+  filter: drop-shadow(0 0 12px rgba(255, 106, 19, 0.15));
+}
+
+.card-link-area:hover .exotica-thumb img {
+  transform: scale(1.04);
+}
+
+.exotica-card-head {
+  margin-bottom: 12px;
+}
+
+.exotica-card-head .chip {
+  margin-bottom: 10px;
+}
+
+.exotica-card-head h3 {
+  font-size: 1.06rem;
+  line-height: 1.32;
+  margin: 0;
+  min-height: 2.8em;
+}
+
+.weapon-mods {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: grid;
+  gap: 9px;
+}
+
+.weapon-mods li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.weapon-mods li::before {
+  display: none;
+}
+
+.weapon-mods img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.82;
+  transition: transform .2s ease, opacity .2s ease;
+  flex-shrink: 0;
+}
+
+.weapon-mods li:hover img {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.talent-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 0 10px;
+  padding: 8px 10px;
+
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.talent-header img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.talent-header span {
+  display: block;
+}
+
+.talent-header:hover {
+  border-color: rgba(255, 106, 19, 0.35);
+}
+
+.talent-header span {
+  color: var(--orange);
+}
+
+.exotic-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: grid;
+  gap: 9px;
+}
+
+.exotic-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.exotic-features li::before {
+  display: none;
+}
+
+.exotic-features img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.9;
+  transition: transform .2s ease, opacity .2s ease;
+  flex-shrink: 0;
+  filter: brightness(1.1);
+}
+
+.exotic-features li:hover img {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+
+
+/* =========================
+   ACCORDION
+========================= */
+
+.card-accordion.premium {
+  margin-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 10px;
+}
+
+.card-accordion.premium summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  padding: 10px 28px 10px 0;
+  transition: color .2s ease;
+}
+
+.card-accordion.premium summary:hover {
+  color: var(--orange-2);
+}
+
+.card-accordion.premium summary::-webkit-details-marker {
+  display: none;
+}
+
+.card-accordion.premium summary::after {
+  content: "›";
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  font-size: 20px;
+  line-height: 1;
+  color: var(--orange);
+  transition: transform 0.25s ease, color 0.2s ease;
+}
+
+.card-accordion.premium[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.card-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
+}
+
+.card-accordion.premium[open] .card-accordion-content {
+  max-height: none; /* ajuste conforme conteúdo */
+}
+
+.card-accordion-content > * {
+  overflow: hidden;
+}
+
+.card-accordion-content .list,
+.card-accordion-content p {
+  margin-top: 10px;
+}
+
+.card-accordion-content p,
+.card-accordion-content li {
+  color: var(--muted);
+  line-height: 1.68;
+  font-size: 0.92rem;
+}
+
+.card-accordion-content .list {
+  gap: 8px;
+}
+
+ .exotica-card-head h3 {
+    min-height: unset;
+  }
+
 
 /* =========================
    CTA / FOOTER
@@ -1149,41 +1489,24 @@ footer {
 }
 
 /* =========================
-   RESPONSIVO LIMPO
+   RESPONSIVO LIMPO (FIX)
 ========================= */
 
-@media (max-width: 1120px) {
-  .hero-grid,
-  .grid-4,
-  .grid-3,
-  .grid-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 992px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 860px) {
+
   .nav {
     min-height: 72px;
     padding: 10px 0;
     align-items: center;
   }
 
+  .exotica-thumb {
+    height: 170px;
+  }
+
   .brand {
     gap: 10px;
   }
-
-  @media (max-width: 768px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
 
   .brand-mark {
     width: 42px;
@@ -1223,7 +1546,6 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 18px;
     box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
-    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
   }
 
@@ -1253,21 +1575,19 @@ footer {
   }
 
   .meta-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 8px 0 14px;
-  justify-content: flex-start;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0 14px;
+  }
 
-#faq .card h3 {
-  margin-bottom: 10px;
-}
+  #faq .card h3 {
+    margin-bottom: 10px;
+  }
 
-#faq .card p {
-  margin: 0;
-}
-
+  #faq .card p {
+    margin: 0;
+  }
 
   .eyebrow {
     font-size: 0.78rem;
@@ -1298,9 +1618,23 @@ footer {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .exotica-card-head h3 {
+    min-height: unset;
+  }
 }
 
+/* =========================
+   MOBILE EXTRA (768px)
+========================= */
+
 @media (max-width: 768px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
   .bg-image {
     background-size: cover;
     background-position: center center !important;
@@ -1314,9 +1648,18 @@ footer {
   .cta-box h2 {
     white-space: normal;
   }
+
+  .talent-header {
+    padding: 10px 12px;
+  }
 }
 
+/* =========================
+   MOBILE SMALL (560px)
+========================= */
+
 @media (max-width: 560px) {
+
   .container {
     width: min(var(--max), calc(100% - 20px));
   }

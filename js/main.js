@@ -36,21 +36,29 @@ if (bgImage) {
 
 /*** Lightbox para imagens ***/
   document.addEventListener("DOMContentLoaded", () => {
-
   const lightbox = document.getElementById("lightbox");
-  if (!lightbox) return;
+  const lightboxImg = document.getElementById("lightbox-img");
+  const triggers = document.querySelectorAll(".lightbox-trigger");
+  const closeBtn = document.querySelector(".lightbox-close");
 
-  const lightboxImg = lightbox.querySelector("img");
+  if (!lightbox || !lightboxImg || !closeBtn || triggers.length === 0) return;
 
-  document.querySelectorAll(".lightbox-trigger img").forEach(img => {
+  triggers.forEach(img => {
     img.addEventListener("click", () => {
       lightbox.classList.add("active");
       lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || "";
     });
   });
 
-  lightbox.addEventListener("click", () => {
+  closeBtn.addEventListener("click", () => {
     lightbox.classList.remove("active");
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("active");
+    }
   });
 
   document.addEventListener("keydown", (e) => {
@@ -58,5 +66,4 @@ if (bgImage) {
       lightbox.classList.remove("active");
     }
   });
-
 });
