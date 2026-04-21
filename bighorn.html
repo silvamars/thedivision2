@@ -2,18 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bighorn | Agent Hub Division 2</title>
-  <meta name="description" content="Portal The Division 2."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bighorn | Exótica lendária | Missões Heroicas/Lendárias | AR híbrida | The Division 2</title>
+  <meta name="description" content="Guia completo da Bighorn no The Division 2. Saiba como obter em missões lendárias, como funcionam seus talentos, melhores builds e dicas para usar no endgame.">
 
-  <!-- Fonts -->
   <link rel="icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" as="style">
 </head>
 
 <body class="page-exoticas">
@@ -21,234 +19,318 @@
   <div class="bg-overlay"></div>
   <div class="grid-bg"></div>
 
-<header class="topbar">
-  <div class="container nav">
-    <a href="index.html" class="brand">
-      <span class="brand-mark">TD2</span>
-      <span class="brand-copy">
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">TD2</span>
+        <span class="brand-copy">
+          <strong>Agent Hub Division 2</strong>
+          <span>Builds, guias e conteúdo endgame</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
+        ☰
+      </button>
+
+      <nav class="menu" id="mainMenu">
+        <a href="index.html">Home</a>
+        <a href="builds.html">Builds</a>
+        <a href="exoticas.html" class="active">Exóticas</a>
+        <a href="raides.html">Raides</a>
+        <a href="lendarias.html">Lendárias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <span class="eyebrow">Exótica lendária | Missões Heroicas/Lendárias | AR híbrida</span>
+          <h1>Bighorn</h1>
+          <p>
+            A <strong>Bighorn</strong> é uma exótica obtida em conteúdo de alta dificuldade, com foco em combate híbrido. 
+            Ela alterna entre modo automático e semiautomático ao mirar, permitindo adaptar o estilo de jogo conforme a situação. 
+            É uma excelente escolha para jogadores que buscam flexibilidade e desempenho em conteúdo lendário.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#farm">Como obter</a>
+            <a class="btn btn-secondary" href="builds.html">Explorar Builds</a>
+            <a class="btn btn-secondary" href="lendarias.html">Ver Lendárias</a>
+          </div>
+        </div>
+
+        <aside class="panel hero-panel">
+          <span class="chip">Resumo rápido</span>
+          <h3>Perfil da exótica</h3>
+
+          <div class="mini-grid">
+            <div class="mini-card">
+              <strong>Origem</strong>
+              <span>Missões Lendárias</span>
+            </div>
+
+            <div class="mini-card">
+              <strong>Tipo</strong>
+              <span>Exótica híbrida</span>
+            </div>
+
+            <div class="mini-card">
+              <strong>Ideal para</strong>
+              <span>Combate versátil</span>
+            </div>
+
+            <div class="mini-card">
+              <strong>Destaque</strong>
+              <span>Modo duplo de disparo</span>
+            </div>
+          </div> 
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ORIGEM / FARM -->
+    <section class="section" id="farm">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Origem</span>
+          <h3>Onde conseguir</h3>
+          <ul class="list">
+            <li>Obtida em missões no modo <strong>Lendário</strong></li>
+            <li>Chance de drop ao completar missões de alta dificuldade</li>
+            <li>Disponível em rotação de missões lendárias semanais</li>
+            <li>Exige builds fortes e domínio de mecânicas PvE avançadas</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Farm</span>
+          <h3>Melhor forma de obter</h3>
+          <ul class="list">
+            <li>Complete missões lendárias com grupo organizado</li>
+            <li>Use builds DPS ou suporte otimizadas para sobrevivência</li>
+            <li>Jogue com grupo fixo para melhorar consistência</li>
+            <li>Priorize eficiência e execução em vez de velocidade</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TALENTOS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Talentos</span>
+            <h2 class="section-title">Como a Bighorn funciona</h2>
+            <p class="section-subtitle">
+              A Bighorn combina dois estilos de combate em uma única arma. Seu talento alterna o comportamento da arma entre disparo automático e semiautomático, permitindo adaptação dinâmica em combate.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-1">
+
+          <article class="card">
+            <div class="talent-header">
+              <img src="img/icons/bighorne.webp" alt="Talento Caçador de Feras">
+              <span>Caçador de Feras</span>
+            </div>
+
+            <ul class="list">
+              <li><strong>Modo automático:</strong> funciona como rifle de assalto com cadência padrão.</li>
+              <li><strong>Modo semiautomático:</strong> ao mirar, passa a causar alto dano por disparo.</li>
+              <li><strong>Acúmulo de dano:</strong> headshots aumentam o dano progressivamente.</li>
+              <li><strong>Controle de combate:</strong> permite alternar entre pressão e precisão conforme o cenário.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PONTOS FORTES / LIMITAÇÕES -->
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Pontos fortes</span>
+          <h3>O que faz essa exótica se destacar</h3>
+          <ul class="list">
+            <li>Grande versatilidade entre combate próximo e médio alcance</li>
+            <li>Modo semiautomático com alto dano por disparo</li>
+            <li>Boa adaptação a diferentes situações de combate</li>
+            <li>Valor consistente em conteúdo lendário</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Limitações</span>
+          <h3>O que você precisa considerar</h3>
+          <ul class="list">
+            <li>Exige adaptação constante entre os modos de disparo</li>
+            <li>Menos intuitiva que outras exóticas focadas em um único estilo</li>
+            <li>Depende de boa precisão para extrair valor máximo</li>
+            <li>Farm em conteúdo lendário pode ser desafiador</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BUILDS -->
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Builds</span>
+          <h3>Onde a Bighorn funciona melhor</h3>
+          <ul class="list">
+            <li>Builds híbridas que equilibram dano e controle</li>
+            <li>Loadouts para conteúdo lendário e PvE avançado</li>
+            <li>Combina com jogadores que alternam entre estilos de combate</li>
+            <li>Boa opção para quem não quer ficar preso a um único padrão de jogo</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Sinergia</span>
+          <h3>Como encaixar no seu loadout</h3>
+          <ul class="list">
+            <li>Combina com builds focadas em dano crítico e headshot</li>
+            <li>Funciona bem com estilos de jogo mais controlados</li>
+            <li>Se beneficia de posicionamento e leitura de combate</li>
+            <li>Permite adaptação entre pressão ofensiva e precisão</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DICAS PRÁTICAS -->
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Dicas práticas</span>
+          <h3>Como jogar melhor com ela</h3>
+          <ul class="list">
+            <li>Use o modo automático para pressão em combate próximo</li>
+            <li>Ative o modo semiautomático para eliminar alvos prioritários</li>
+            <li>Treine a alternância entre os modos para melhorar eficiência</li>
+            <li>Posicionamento é essencial para aproveitar o dano por headshot</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Para quem vale a pena</span>
+          <h3>Perfil ideal de jogador</h3>
+          <ul class="list">
+            <li>Ideal para jogadores que gostam de versatilidade em combate</li>
+            <li>Boa escolha para quem joga conteúdo lendário com frequência</li>
+            <li>Indicado para quem domina múltiplos estilos de jogo</li>
+            <li>Pode não ser ideal para quem busca uma arma simples e direta</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- LINK CONTEXTUAL-->
+
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Veja também</span>
+          <h3>Explore outras exóticas</h3>
+            <ul class="list">
+              <li><a href="exoticas.html">Vitrine de exóticas</a></li>
+              <li><a href="todas-exoticas.html">Catálogo completo</a></li>
+            </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Próximo passo</span>
+          <h3>Domine o conteúdo lendário</h3>
+          <ul class="list">
+            <li><a href="lendarias.html">Guia de missões lendárias</a></li>
+            <li><a href="builds.html">Builds híbridas e versáteis</a></li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Adapte seu combate e domine o campo com a Bighorn</h2>
+
+          <p>
+            Com a <strong>Bighorn</strong>, você alterna entre precisão e pressão ofensiva em tempo real. 
+            Domine seus modos de disparo e leve sua performance em conteúdo lendário a um novo nível.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="lendarias.html">Ver Lendárias</a>
+            <a class="btn btn-secondary" href="exoticas.html">Voltar para Exóticas</a>
+            <a class="btn btn-secondary" href="todas-exoticas.html">Ver Catálogo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
         <strong>Agent Hub Division 2</strong>
-        <span>Builds, guias e conteúdo endgame</span>
-      </span>
-    </a>
+        <p class="footer-text">
+          Guias completos de builds, exóticas e conteúdo endgame de The Division 2 para PvE e PvP.
+        </p>
+        <span class="footer-copy">
+          &copy; 2026 Todos os direitos reservados.
+        </span>
+      </div>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
-      ☰
-    </button>
+      <div class="footer-column">
+        <h4>Início</h4>
+        <a href="index.html">Home</a>
+      </div>
 
-    <nav class="menu" id="mainMenu">
-      <a href="index.html">Home</a>
-      <a href="builds.html">Builds</a>      
-      <a href="exoticas.html" class="active">Exóticas</a>
-      <a href="raides.html">Raides</a>      
-      <a href="lendarias.html">Lendárias</a>
-    </nav>
-  </div>
-</header>
+      <div class="footer-column">
+        <h4>Builds</h4>
+        <a href="builds.html">Todas as Builds</a>
+        <a href="builds-dps.html">DPS</a>
+        <a href="builds-skill.html">Skill</a>
+        <a href="builds-hibridas.html">Híbridas</a>
+      </div>
 
-<main>
+      <div class="footer-column">
+        <h4>Endgame</h4>
+        <a href="raides.html">Raides</a>
+        <a href="lendarias.html">Lendárias</a>
+        <a href="incursao.html">Incursão</a>
+      </div>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">Exótica de lendária | PvE avançado | Progressão endgame</span>
-      <h1>Bighorn</h1>
-      <p>
-        A <strong>Bighorn</strong> é a exótica que conecta a área de exóticas do seu portal com as <strong>missões lendárias</strong>. Ela é perfeita para mostrar que o endgame de The Division 2 não gira só em torno de raids e incursão, mas também em torno de PvE pesado, progressão de habilidade e domínio de conteúdo de alta dificuldade.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#farm">Como farmar</a>
-        <a class="btn btn-secondary" href="lendarias.html">Ver Lendárias</a>
+      <div class="footer-column">
+        <h4>Conteúdo</h4>
+        <a href="exoticas.html">Exóticas</a>
+        <a href="colecionaveis.html">Colecionáveis</a>
+        <a href="historia.html">História</a>
       </div>
     </div>
-
-    <aside class="panel hero-panel">
-      <span class="chip">Resumo rápido</span>
-      <h3>Perfil da exótica</h3>
-      <div class="mini-grid">
-        <div class="mini-card">
-          <strong>Origem</strong>
-          <span>Missões lendárias</span>
-        </div>
-        <div class="mini-card">
-          <strong>Tipo</strong>
-          <span>Exótica de PvE avançado</span>
-        </div>
-        <div class="mini-card">
-          <strong>Ideal para</strong>
-          <span>Jogadores de progressão</span>
-        </div>
-        <div class="mini-card">
-          <strong>Meta</strong>
-          <span>Conteúdo de alta dificuldade</span>
-        </div>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid-2">
-    <article class="card">
-      <span class="chip">Onde conseguir</span>
-      <h3>Origem da Bighorn</h3>
-      <ul class="list">
-        <li>Relacionada a missões em dificuldade lendária</li>
-        <li>Boa para fortalecer a futura área de lendárias do portal</li>
-        <li>Combina com progressão PvE mais avançada</li>
-        <li>Ótima meta para jogadores que querem sair do básico</li>
-      </ul>
-    </article>
-
-    <article class="card" id="farm">
-      <span class="chip">Como farmar</span>
-      <h3>Rotina recomendada</h3>
-      <ul class="list">
-        <li>Escolher missões lendárias que o grupo já domina melhor</li>
-        <li>Entrar com composições seguras e bem testadas</li>
-        <li>Separar builds de dano e builds de controle quando necessário</li>
-        <li>Repetir com constância em vez de tentar runs caóticas</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid-2">
-    <article class="card">
-      <span class="chip">Pontos fortes</span>
-      <h3>Por que vale a pena</h3>
-      <ul class="list">
-        <li>É uma exótica ligada a conteúdo realmente desafiador</li>
-        <li>Ajuda a mostrar variedade de endgame no seu portal</li>
-        <li>Valoriza a área de missões lendárias</li>
-        <li>Conversa bem com builds PvE e progresso do jogador</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Desafio</span>
-      <h3>O que pesa no farm</h3>
-      <ul class="list">
-        <li>Lendária exige mais disciplina que conteúdo heroico comum</li>
-        <li>Grupo sem função definida sofre muito mais</li>
-        <li>Falta de posicionamento e controle pesa demais</li>
-        <li>Build ofensiva sem segurança pode atrapalhar o clear</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid-2">
-    <article class="card">
-      <span class="chip">Combina com</span>
-      <h3>Builds e páginas para linkar</h3>
-      <ul class="list">
-        <li><a href="build-striker-dps.html">Striker DPS</a> para grupos que já dominam a missão</li>
-        <li><a href="build-skill-countdown.html">Turret + Drone</a> para abordagem mais segura</li>
-        <li>Página de lendárias com rotas e missão recomendada</li>
-        <li>Builds de status e suporte quando o grupo ainda aprende</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Dica de portal</span>
-      <h3>Como valorizar essa página</h3>
-      <ul class="list">
-        <li>Linkar Bighorn direto da área de lendárias</li>
-        <li>Mostrar quais missões o grupo usa para farmar</li>
-        <li>Separar builds seguras para quem ainda não domina</li>
-        <li>Transformar a página em ponte entre exóticas e PvE avançado</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid-2">
-    <article class="card">
-      <span class="chip">Para iniciantes</span>
-      <h3>Melhor forma de chegar nela</h3>
-      <ul class="list">
-        <li>Primeiro montar uma build PvE realmente confiável</li>
-        <li>Aprender heroica e depois avançar para lendária</li>
-        <li>Entrar com grupo paciente e comunicativo</li>
-        <li>Dar preferência a missão lendária mais confortável para o time</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Valor estratégico</span>
-      <h3>O que ela representa no site</h3>
-      <ul class="list">
-        <li>Expande a área de exóticas além de raids e incursão</li>
-        <li>Mostra profundidade no PvE do portal</li>
-        <li>Ajuda a organizar a futura página de lendárias</li>
-        <li>É uma boa meta para jogadores em evolução</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container">
-    <div class="cta-box">
-      <h2>Agora sua área principal de exóticas já cobre os itens mais fortes do portal</h2>
-      <p>
-        Com a Bighorn, você fecha o primeiro bloco importante de exóticas: raids, incursão e conteúdo lendário. O próximo passo ideal é criar a página <strong>todas-exoticas.html</strong> para organizar o resto do arsenal exótico do jogo.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="exoticas.html">Voltar para Exóticas</a>
-        <a class="btn btn-secondary" href="lendarias.html">Ver Lendárias</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    
-    <div class="footer-brand">
-      <strong>Agent Hub Division 2</strong>
-      <p class="footer-text">
-        Guias completos de builds, exóticas e conteúdo endgame de The Division 2 para PvE e PvP.
-      </p>
-      <span class="footer-copy">
-        &copy; 2026 Todos os direitos reservados.
-      </span>
-    </div>
-
-    <div class="footer-column">
-      <h4>Início</h4>
-      <a href="index.html">Home</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Builds</h4>
-      <a href="builds.html">Todas as Builds</a>
-      <a href="builds-dps.html">DPS</a>
-      <a href="builds-skill.html">Skill</a>
-      <a href="builds-hibridas.html">Híbridas</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Endgame</h4>
-      <a href="raides.html">Raides</a>
-      <a href="lendarias.html">Lendárias</a>
-      <a href="incursao.html">Incursão</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Conteúdo</h4>
-      <a href="exoticas.html">Exóticas</a>
-      <a href="colecionaveis.html">Colecionáveis</a>
-      <a href="historia.html">História</a>
-    </div>
-
-  </div>
-</footer>
+  </footer>
 
   <script src="js/main.js" defer></script>
 </body>
