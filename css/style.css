@@ -694,33 +694,86 @@ h4 {
   align-items: center;
   justify-content: center;
   min-height: 50px;
-  padding: 0 20px;
-  border-radius: 16px;
-  font-weight: 800;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
   border: 1px solid transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  transition: all .25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.15), transparent);
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.btn:hover::after {
+  opacity: 1;
 }
 
 .btn:hover {
   transform: translateY(-2px);
 }
 
+/* =========================
+   PRIMARY (laranja premium)
+========================= */
+
 .btn-primary {
-  background: linear-gradient(135deg, var(--orange), var(--orange-2));
+  background: linear-gradient(135deg, #ff6a13, #ff3c00);
   color: #fff;
-  box-shadow: 0 18px 36px rgba(255, 106, 19, 0.24);
+  box-shadow: 
+    0 10px 28px rgba(255, 106, 19, 0.28),
+    0 0 18px rgba(255, 106, 19, 0.18);
 }
 
 .btn-primary:hover {
+  transform: translateY(-2px);
   box-shadow:
-    0 20px 40px rgba(255, 106, 19, 0.35),
-    0 0 18px rgba(255, 106, 19, 0.25);
+    0 14px 34px rgba(255, 106, 19, 0.35),
+    0 0 22px rgba(255, 106, 19, 0.25);
 }
 
 .btn-secondary {
   background: rgba(255, 255, 255, 0.03);
   border-color: rgba(255, 255, 255, 0.1);
   color: var(--text);
+}
+
+/* =========================
+   SECONDARY (dark premium)
+========================= */
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(255, 106, 19, 0.45);
+  color: #fff;
+
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.35),
+    0 0 14px rgba(255, 106, 19, 0.08);
+}
+
+/* =========================
+   HOVER GLOBAL
+========================= */
+
+.btn:active {
+  transform: scale(0.97);
 }
 
 /* =========================
@@ -754,7 +807,7 @@ h4 {
 .card {
   display: block;
   color: inherit;
-  transition: all 0.25s ease;
+  transition:  transform .25s ease, box-shadow .25s ease;
 }
 
 .card a {
@@ -788,11 +841,11 @@ h4 {
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.01);
+  transform: translateY(-4px);
   border-color: rgba(255, 106, 19, 0.5);
   box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.5),
-    0 0 20px rgba(255, 106, 19, 0.15);
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    0 0 18px rgba(255, 106, 19, 0.08);
 }
 
 .card:hover .thumb-image img {
@@ -1396,6 +1449,68 @@ h4 {
  .exotica-card-head h3 {
     min-height: unset;
   }
+
+/* =========================
+   HUB / NAVEGAÇÃO SECUNDÁRIA
+========================= */
+
+.hub-navigation-grid {
+  gap: 20px;
+  align-items: start;
+}
+
+.hub-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  min-height: 100%;
+}
+
+.hub-card-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 14px;
+  background:
+    radial-gradient(circle at top center, rgba(255, 106, 19, 0.18), transparent 65%),
+    rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hub-card-icon img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(255, 106, 19, 0.18));
+  transition: transform .25s ease;
+}
+
+.hub-card h3 {
+  margin: 8px 0 10px;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.hub-card p {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.hub-card:hover .hub-card-icon img {
+  transform: scale(1.08);
+}
+
+.hub-card:hover .hub-card-icon {
+  border-color: rgba(255, 106, 19, 0.35);
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.32),
+    0 0 18px rgba(255, 106, 19, 0.10);
+}
 
 
 /* =========================
