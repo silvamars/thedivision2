@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ouroboros | Exótica da Incursão Paradise Lost | The Division 2</title>
-
-  <meta name="description" content="Guia completo da Ouroboros no The Division 2. Saiba como farmar na incursão Paradise Lost, melhores builds, vantagens e como usar essa SMG exótica no endgame.">
+  <title>Ouroboros | Exótica de incursão | Paradise Lost | The Division 2</title>
+  <meta name="description" content="Guia completo da Ravenous no The Division 2. Saiba como obter na raid Operation Iron Horse, como funcionam seus talentos, melhores builds e dicas para usar no endgame.">
 
   <link rel="icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-exoticas">
@@ -20,247 +19,293 @@
   <div class="bg-overlay"></div>
   <div class="grid-bg"></div>
 
-<header class="topbar">
-  <div class="container nav">
-    <a href="index.html" class="brand">
-      <span class="brand-mark">TD2</span>
-      <span class="brand-copy">
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">TD2</span>
+        <span class="brand-copy">
+          <strong>Agent Hub Division 2</strong>
+          <span>Builds, guias e conteúdo endgame</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
+        ☰
+      </button>
+
+      <nav class="menu" id="mainMenu">
+        <a href="index.html">Home</a>
+        <a href="builds.html">Builds</a>
+        <a href="exoticas.html" class="active">Exóticas</a>
+        <a href="raides.html">Raides</a>
+        <a href="lendarias.html">Lendárias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <span class="eyebrow">Exótica de incursão | Paradise Lost | Combate agressivo</span>
+          <h1>Ouroboros</h1>
+          <p>
+            A <strong>Ouroboros</strong> é uma exótica focada em combate agressivo e ritmo acelerado, obtida na incursão <strong>Paradise Lost</strong>. 
+            Com alta cadência de disparo e mecânica baseada em efeitos de status, ela é uma das melhores escolhas para jogadores que preferem 
+            jogar avançando sobre os inimigos e mantendo pressão constante no campo de batalha.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#farm">Como obter</a>
+            <a class="btn btn-secondary" href="builds.html">Explorar Builds</a>
+            <a class="btn btn-secondary" href="incursao.html">Ver Incursão</a>
+          </div>
+        </div>
+
+      <aside class="panel hero-panel">
+        <span class="chip">Resumo rápido</span>
+        <h3>Perfil da exótica</h3>
+
+        <div class="mini-grid">
+          <div class="mini-card">
+            <strong>Origem</strong>
+            <span>Paradise Lost</span>
+          </div>
+
+          <div class="mini-card">
+            <strong>Tipo</strong>
+            <span>Exótica de incursão</span>
+          </div>
+
+          <div class="mini-card">
+            <strong>Ideal para</strong>
+            <span>Combate agressivo</span>
+          </div>
+
+          <div class="mini-card">
+            <strong>Destaque</strong>
+            <span>Cadência e status</span>
+          </div>
+        </div>  
+      </aside>
+
+      </div>
+    </section>
+
+    <!-- ORIGEM / FARM -->
+    <section class="section" id="farm">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Origem</span>
+          <h3>Onde conseguir</h3>
+          <ul class="list">
+            <li>Obtida na incursão <strong>Paradise Lost</strong></li>
+            <li>Disponível ao derrotar chefes ou no baú final</li>
+            <li>Exige coordenação de grupo e execução de mecânicas</li>
+              <li>Uma das exóticas mais importantes para builds agressivas</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Farm</span>
+          <h3>Melhor forma de obter</h3>
+          <ul class="list">
+            <li>Faça runs semanais da incursão com grupo fixo</li>
+            <li>Use personagens alternativos para aumentar suas tentativas</li>
+            <li>Aprenda as mecânicas para reduzir tempo de execução</li>
+            <li>Priorize grupos coordenados para manter consistência nas runs</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TALENTOS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Talentos</span>
+            <h2 class="section-title">Como a Ravenous funciona</h2>
+            <p class="section-subtitle">
+              A Ouroboros recompensa jogadores que mantêm pressão constante no combate. Seu talento transforma efeitos de status recebidos em vantagem ofensiva, criando um estilo de jogo direto e agressivo.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-1">
+
+          <article class="card">
+            <div class="talent-header">
+              <img src="img/icons/Rule_them_all.webp" alt="Talento Ouroboros">
+              <span>Controle Total</span>
+            </div>
+
+            <ul class="list">
+              <li><strong>Conversão de status:</strong> ao sofrer um efeito de status, parte do próximo pente aplica esse mesmo efeito nos inimigos.</li>
+              <li><strong>Combate ativo:</strong> o efeito só é ativado enquanto o jogador estiver em combate.</li>
+              <li><strong>Pressão constante:</strong> incentiva combate agressivo e troca rápida de alvos.</li>
+              <li><strong>Sinergia ofensiva:</strong> funciona melhor com builds que mantêm ritmo alto de disparo.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PONTOS FORTES / LIMITAÇÕES -->
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Pontos fortes</span>
+          <h3>O que faz essa exótica se destacar</h3>
+          <ul class="list">
+            <li>Uma das melhores exóticas para combate agressivo no jogo</li>
+            <li>Alta cadência permite pressão constante nos inimigos</li>
+            <li>Interage com efeitos de status de forma única</li>
+            <li>Excelente desempenho em incursões e PvE avançado</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Limitações</span>
+          <h3>O que você precisa considerar</h3>
+          <ul class="list">
+            <li>Depende de combate ativo para funcionar corretamente</li>
+            <li>Perde eficiência em estilos de jogo mais passivos</li>
+            <li>Exige boa movimentação para sobreviver em combate próximo</li>
+            <li>Não é ideal para jogadores que preferem long range ou sniper</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BUILDS -->
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Builds</span>
+          <h3>Onde a Ravenous funciona melhor</h3>
+          <ul class="list">
+            <li>Builds agressivas com SMG e combate próximo</li>
+            <li>Composições focadas em dano contínuo e pressão ofensiva</li>
+            <li>Loadouts para incursão e conteúdo PvE intenso</li>
+            <li>Jogadores que preferem mobilidade e ritmo alto</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Sinergia</span>
+          <h3>Como encaixar no seu loadout</h3>
+          <ul class="list">
+            <li>Combina com builds de dano crítico e cadência elevada</li>
+            <li>Funciona bem com estilos de jogo mais agressivos</li>
+            <li>Se beneficia de movimentação constante e posicionamento dinâmico</li>
+            <li>Ideal para jogadores que jogam avançando sobre os inimigos</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DICAS PRÁTICAS -->
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Dicas práticas</span>
+          <h3>Como jogar melhor com ela</h3>
+          <ul class="list">
+            <li>Mantenha-se sempre em combate para ativar o talento com frequência</li>
+            <li>Aproveite efeitos de status para aumentar o impacto ofensivo</li>
+            <li>Evite jogar de forma passiva, pois reduz o potencial da arma</li>
+            <li>Movimentação e posicionamento são essenciais para sobreviver</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Para quem vale a pena</span>
+          <h3>Perfil ideal de jogador</h3>
+          <ul class="list">
+            <li>Excelente para jogadores que preferem combate agressivo</li>
+            <li>Ótima escolha para quem joga incursão com frequência</li>
+            <li>Indicado para builds focadas em mobilidade e pressão constante</li>
+            <li>Pode não ser ideal para quem prefere estilo mais tático ou defensivo</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Entre no combate e mantenha a pressão com a Ouroboros</h2>
+
+          <p>
+            Com a <strong>Ouroboros</strong> equipada, você transforma combate agressivo em vantagem real. 
+            Domine a incursão, mantenha o ritmo e maximize seu desempenho nas atividades mais intensas do endgame.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="incursao.html">Ver Incursão</a>
+            <a class="btn btn-secondary" href="exoticas.html">Voltar para Exóticas</a>
+            <a class="btn btn-secondary" href="todas-exoticas.html">Ver Catálogo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
         <strong>Agent Hub Division 2</strong>
-        <span>Builds, guias e conteúdo endgame</span>
-      </span>
-    </a>
+        <p class="footer-text">
+          Guias completos de builds, exóticas e conteúdo endgame de The Division 2 para PvE e PvP.
+        </p>
+        <span class="footer-copy">
+          &copy; 2026 Todos os direitos reservados.
+        </span>
+      </div>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+      <div class="footer-column">
+        <h4>Início</h4>
+        <a href="index.html">Home</a>
+      </div>
 
-    <nav class="menu" id="mainMenu">
-      <a href="index.html">Home</a>
-      <a href="builds.html">Builds</a>
-      <a href="exoticas.html" class="active">Exóticas</a>
-      <a href="raides.html">Raides</a>
-      <a href="lendarias.html">Lendárias</a>
-    </nav>
-  </div>
-</header>
+      <div class="footer-column">
+        <h4>Builds</h4>
+        <a href="builds.html">Todas as Builds</a>
+        <a href="builds-dps.html">DPS</a>
+        <a href="builds-skill.html">Skill</a>
+        <a href="builds-hibridas.html">Híbridas</a>
+      </div>
 
-<main>
+      <div class="footer-column">
+        <h4>Endgame</h4>
+        <a href="raides.html">Raides</a>
+        <a href="lendarias.html">Lendárias</a>
+        <a href="incursao.html">Incursão</a>
+      </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-
-    <div>
-      <span class="eyebrow">Exótica de incursão | Paradise Lost | Endgame ofensivo</span>
-
-      <h1>Ouroboros</h1>
-
-      <p>
-        A <strong>Ouroboros</strong> é uma das armas mais fortes do endgame atual do The Division 2, obtida na incursão <strong>Paradise Lost</strong>. Com altíssima cadência e potencial de dano explosivo, ela se tornou uma referência para builds agressivas e grupos que buscam eficiência máxima.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#farm">Como farmar</a>
-        <a class="btn btn-secondary" href="incursao.html">Ver Incursão</a>
+      <div class="footer-column">
+        <h4>Conteúdo</h4>
+        <a href="exoticas.html">Exóticas</a>
+        <a href="colecionaveis.html">Colecionáveis</a>
+        <a href="historia.html">História</a>
       </div>
     </div>
+  </footer>
 
-    <aside class="panel hero-panel">
-      <span class="chip">Resumo rápido</span>
-      <h3>Perfil da exótica</h3>
-
-      <div class="mini-grid">
-        <div class="mini-card">
-          <strong>Origem</strong>
-          <span>Paradise Lost</span>
-        </div>
-
-        <div class="mini-card">
-          <strong>Tipo</strong>
-          <span>SMG exótica</span>
-        </div>
-
-        <div class="mini-card">
-          <strong>Ideal para</strong>
-          <span>Builds agressivas</span>
-        </div>
-
-        <div class="mini-card">
-          <strong>Meta</strong>
-          <span>DPS alto</span>
-        </div>
-      </div>
-    </aside>
-
-  </div>
-</section>
-
-<!-- FARM -->
-<section class="section">
-  <div class="container grid-2">
-
-    <article class="card">
-      <span class="chip">Onde dropar</span>
-      <h3>Origem da Ouroboros</h3>
-      <ul class="list">
-        <li>Incursão <strong>Paradise Lost</strong></li>
-        <li>Modo normal (não Discovery)</li>
-        <li>Requer grupo coordenado</li>
-        <li>Endgame focado em execução</li>
-      </ul>
-    </article>
-
-    <article class="card" id="farm">
-      <span class="chip">Como farmar</span>
-      <h3>Rotina recomendada</h3>
-      <ul class="list">
-        <li>Fazer runs semanais com grupo fixo</li>
-        <li>Treinar mecânicas da incursão</li>
-        <li>Evitar grupos aleatórios inconsistentes</li>
-        <li>Repetir runs eficientes em vez de tentativas caóticas</li>
-      </ul>
-    </article>
-
-  </div>
-</section>
-
-<!-- FORÇA VS DESAFIO -->
-<section class="section">
-  <div class="container grid-2">
-
-    <article class="card">
-      <span class="chip">Pontos fortes</span>
-      <h3>Por que é meta</h3>
-      <ul class="list">
-        <li>DPS extremamente alto em curto alcance</li>
-        <li>Altíssima cadência de tiro</li>
-        <li>Perfeita para builds agressivas</li>
-        <li>Muito forte em conteúdo coordenado</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Desafios</span>
-      <h3>O que exige do jogador</h3>
-      <ul class="list">
-        <li>Dependência de posicionamento</li>
-        <li>Menor eficiência em longo alcance</li>
-        <li>Incursão exige coordenação de grupo</li>
-        <li>Punição alta para erro de gameplay</li>
-      </ul>
-    </article>
-
-  </div>
-</section>
-
-<!-- BUILDS -->
-<section class="section">
-  <div class="container grid-2">
-
-    <article class="card">
-      <span class="chip">Combina com</span>
-      <h3>Builds ideais</h3>
-      <ul class="list">
-        <li><a href="build-striker-dps.html">Striker DPS</a> (melhor sinergia)</li>
-        <li><a href="build-pvp-smg.html">PvP SMG</a></li>
-        <li>Builds agressivas de curto alcance</li>
-        <li>Configurações focadas em crítico</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Dica de portal</span>
-      <h3>Como valorizar essa página</h3>
-      <ul class="list">
-        <li>Linkar direto da página de incursão</li>
-        <li>Mostrar builds recomendadas</li>
-        <li>Criar guia da Paradise Lost futuramente</li>
-        <li>Usar como referência de meta atual</li>
-      </ul>
-    </article>
-
-  </div>
-</section>
-
-<!-- VALOR -->
-<section class="section">
-  <div class="container grid-2">
-
-    <article class="card">
-      <span class="chip">Para quem é</span>
-      <h3>Perfil do jogador</h3>
-      <ul class="list">
-        <li>Jogadores focados em DPS</li>
-        <li>Grupos organizados</li>
-        <li>Players de endgame</li>
-        <li>Quem busca meta atual</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Valor estratégico</span>
-      <h3>Importância no portal</h3>
-      <ul class="list">
-        <li>Representa a incursão no site</li>
-        <li>Conecta builds agressivas</li>
-        <li>Mostra evolução do jogador</li>
-        <li>É uma das metas mais relevantes do jogo</li>
-      </ul>
-    </article>
-
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-  <div class="container">
-    <div class="cta-box">
-      <h2>A Ouroboros é o símbolo do endgame atual</h2>
-      <p>
-        Se você quer jogar no nível mais alto do The Division 2, essa exótica é uma das principais metas. Ela conecta incursão, builds e gameplay avançado em um único objetivo.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="exoticas.html">Voltar para Exóticas</a>
-        <a class="btn btn-secondary" href="incursao.html">Ver Incursão</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <strong>Agent Hub Division 2</strong>
-      <p class="footer-text">
-        Guias completos de builds, exóticas e conteúdo endgame de The Division 2.
-      </p>
-      <span class="footer-copy">
-        &copy; 2026 Todos os direitos reservados.
-      </span>
-    </div>
-
-    <div class="footer-column">
-      <h4>Builds</h4>
-      <a href="builds.html">Todas</a>
-      <a href="builds-dps.html">DPS</a>
-      <a href="builds-skill.html">Skill</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Endgame</h4>
-      <a href="raides.html">Raides</a>
-      <a href="lendarias.html">Lendárias</a>
-      <a href="incursao.html">Incursão</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Conteúdo</h4>
-      <a href="exoticas.html">Exóticas</a>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -565,6 +565,12 @@ a {
   padding: 128px 0 42px;
 }
 
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
 .hero-grid,
 .grid-2,
 .grid-3,

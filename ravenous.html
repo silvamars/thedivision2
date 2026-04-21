@@ -2,227 +2,308 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ravenous | Agent Hub Division 2</title>
-  <meta name="description" content="Portal The Division 2."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ravenous | Exótica da Raid Iron Horse | The Division 2</title>
+  <meta name="description" content="Guia completo da Ravenous no The Division 2. Saiba como obter na raid Operation Iron Horse, como funcionam seus talentos, melhores builds e dicas para usar no endgame.">
 
-  <!-- Fonts -->
   <link rel="icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page-exoticas">
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+  <div class="grid-bg"></div>
 
-<div class="bg-image"></div>
-<div class="bg-overlay"></div>
-<div class="grid-bg"></div>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">TD2</span>
+        <span class="brand-copy">
+          <strong>Agent Hub Division 2</strong>
+          <span>Builds, guias e conteúdo endgame</span>
+        </span>
+      </a>
 
-<header class="topbar">
-  <div class="container nav">
-    <a href="index.html" class="brand">
-      <span class="brand-mark">TD2</span>
-      <span class="brand-copy">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
+        ☰
+      </button>
+
+      <nav class="menu" id="mainMenu">
+        <a href="index.html">Home</a>
+        <a href="builds.html">Builds</a>
+        <a href="exoticas.html" class="active">Exóticas</a>
+        <a href="raides.html">Raides</a>
+        <a href="lendarias.html">Lendárias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <span class="eyebrow">Exótica de raid | Operation Iron Horse | Endgame avançado</span>
+          <h1>Ravenous</h1>
+          <p>
+            A <strong>Ravenous</strong> é uma exótica de raid voltada para jogadores que gostam de mecânicas mais técnicas e combate em grupo. Obtida na <strong>Operation Iron Horse</strong>, 
+            ela recompensa posicionamento, controle de ritmo e leitura de combate, sendo uma arma marcante para quem busca dominar o endgame em nível avançado.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#farm">Como obter</a>
+            <a class="btn btn-secondary" href="builds.html">Explorar Builds</a>
+            <a class="btn btn-secondary" href="raides.html">Ver Raides</a>
+          </div>
+        </div>
+
+        <aside class="panel hero-panel">
+          <span class="chip">Resumo rápido</span>
+          <h3>Perfil da exótica</h3>
+
+          <div class="mini-grid">
+            <div class="mini-card">
+              <strong>Origem</strong>
+              <span>Operation Iron Horse</span>
+            </div>
+
+            <div class="mini-card">
+              <strong>Tipo</strong>
+              <span>Exótica de raid</span>
+            </div>
+
+            <div class="mini-card">
+              <strong>Ideal para</strong>
+              <span>Grupos organizados</span>
+            </div>
+
+            <div class="mini-card">
+              <strong>Destaque</strong>
+              <span>Mecânica ofensiva e defensiva</span>
+            </div>
+          </div>  
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ORIGEM / FARM -->
+    <section class="section" id="farm">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Origem</span>
+          <h3>Onde conseguir</h3>
+          <ul class="list">
+            <li>Obtida na raid <strong>Operation Iron Horse</strong></li>
+            <li>Disponível no modo normal, não no Discovery</li>
+            <li>Pode vir de chefes e do baú final da raid</li>
+            <li>Tem melhor aproveitamento em grupos que já dominam a mecânica dos encontros</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Farm</span>
+          <h3>Melhor forma de obter</h3>
+          <ul class="list">
+            <li>Monte um grupo fixo para runs semanais da Iron Horse</li>
+            <li>Use personagens alternativos para aumentar o número de tentativas</li>
+            <li>Treine as mecânicas da raid para melhorar o ritmo das clears</li>
+            <li>Priorize grupos organizados, porque a arma depende de consistência no farm</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TALENTOS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Talentos</span>
+            <h2 class="section-title">Como a Ravenous funciona</h2>
+            <p class="section-subtitle">
+              A Ravenous não é uma exótica de uso automático. Sua força está em alternar os disparos entre os dois lados da arma para aplicar e detonar iniciadores, criando um estilo de jogo técnico, forte em grupos e muito eficiente em raids.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-1">
+
+          <article class="card">
+            <div class="talent-header">
+              <img src="img/icons/geki_and_freki.webp" alt="Talento Geki e Freki">
+              <span>Geki e Freki</span>
+            </div>
+
+            <ul class="list">
+              <li><strong>Disparo duplo:</strong> ao atirar, a Ravenous dispara os dois canos ao mesmo tempo.</li>
+              <li><strong>Alternância de ombro:</strong> disparos do ombro direito aplicam iniciadores ofensivos; disparos do ombro esquerdo aplicam iniciadores defensivos.</li>
+              <li><strong>Detonação cruzada:</strong> disparos de um lado detonam os iniciadores aplicados pelo lado oposto.</li>
+              <li><strong>Efeito ofensivo:</strong> iniciadores ofensivos causam alto dano ao serem detonados.</li>
+              <li><strong>Efeito defensivo:</strong> iniciadores defensivos concedem bônus de armadura e amplificam dano em placas.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PONTOS FORTES / LIMITAÇÕES -->
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Pontos fortes</span>
+          <h3>O que faz essa exótica se destacar</h3>
+          <ul class="list">
+            <li>Entrega um estilo de jogo único entre as exóticas de raid</li>
+            <li>Combina dano, utilidade e controle em combates organizados</li>
+            <li>Funciona muito bem em grupos que sabem coordenar posicionamento</li>
+            <li>É uma das exóticas mais marcantes para quem aprofunda a Iron Horse</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Limitações</span>
+          <h3>O que você precisa considerar</h3>
+          <ul class="list">
+            <li>Exige prática para alternar corretamente os disparos entre os ombros</li>
+            <li>Seu potencial diminui bastante em grupos desorganizados</li>
+            <li>Não é a escolha mais simples para jogadores em fase inicial de raid</li>
+            <li>Depende mais de entendimento da mecânica do que de dano bruto imediato</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BUILDS -->
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Builds</span>
+          <h3>Onde a Ravenous funciona melhor</h3>
+          <ul class="list">
+            <li>Builds de raid com foco em dano sustentado e controle de combate</li>
+            <li>Composições de grupo que aproveitam utilidade ofensiva e defensiva</li>
+            <li>Loadouts para jogadores que alternam agressividade e leitura tática</li>
+            <li>Runs organizadas em que posicionamento e ritmo fazem diferença</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Sinergia</span>
+          <h3>Como encaixar no seu loadout</h3>
+          <ul class="list">
+            <li>Combina melhor com grupos que jogam de forma coordenada</li>
+            <li>Se beneficia de builds com boa precisão, controle e estabilidade</li>
+            <li>Funciona bem quando o jogador entende o tempo certo de aplicar e detonar</li>
+            <li>Brilha mais em raid do que em conteúdo casual ou solo rápido</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DICAS PRÁTICAS -->
+    <section class="section">
+      <div class="container grid-2">
+
+        <article class="card">
+          <span class="chip">Dicas práticas</span>
+          <h3>Como jogar melhor com ela</h3>
+          <ul class="list">
+            <li>Treine a alternância entre os ombros para aplicar e detonar os iniciadores no momento certo</li>
+            <li>Evite usar a Ravenous como arma de “spray”; ela recompensa controle e intenção</li>
+            <li>Em raid, foque em alvos importantes para extrair valor máximo das detonações</li>
+            <li>Quanto melhor sua leitura do combate, maior o retorno da arma no grupo</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="chip">Para quem vale a pena</span>
+          <h3>Perfil ideal de jogador</h3>
+          <ul class="list">
+            <li>Excelente para jogadores que já avançaram além da fase inicial de raid</li>
+            <li>Vale muito para quem gosta de exóticas com mecânica própria e profundidade</li>
+            <li>Ótima meta para grupos fixos que farmam a Iron Horse com frequência</li>
+            <li>Pode não ser prioridade para quem procura uma arma mais simples e direta</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Domine a mecânica e extraia o máximo da Ravenous</h2>
+          <p>
+            Com a <strong>Ravenous</strong> e uma build bem ajustada, você ganha uma exótica técnica, forte em grupos e extremamente marcante para raids. 
+            Quando bem utilizada, ela se torna uma das exóticas mais interessantes e impactantes do endgame.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="raides.html">Ver Raides</a>
+            <a class="btn btn-secondary" href="exoticas.html">Voltar para Exóticas</a>
+            <a class="btn btn-secondary" href="todas-exoticas.html">Ver Catálogo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
         <strong>Agent Hub Division 2</strong>
-        <span>Builds, guias e conteúdo endgame</span>
-      </span>
-    </a>
+        <p class="footer-text">
+          Guias completos de builds, exóticas e conteúdo endgame de The Division 2 para PvE e PvP.
+        </p>
+        <span class="footer-copy">
+          &copy; 2026 Todos os direitos reservados.
+        </span>
+      </div>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">
-      ☰
-    </button>
+      <div class="footer-column">
+        <h4>Início</h4>
+        <a href="index.html">Home</a>
+      </div>
 
-    <nav class="menu" id="mainMenu">
-      <a href="index.html">Home</a>
-      <a href="builds.html">Builds</a>
-      <a href="exoticas.html" class="active">Exóticas</a>
-      <a href="raides.html">Raides</a>
-      <a href="lendarias.html">Lendárias</a>
-    </nav>
-  </div>
-</header>
+      <div class="footer-column">
+        <h4>Builds</h4>
+        <a href="builds.html">Todas as Builds</a>
+        <a href="builds-dps.html">DPS</a>
+        <a href="builds-skill.html">Skill</a>
+        <a href="builds-hibridas.html">Híbridas</a>
+      </div>
 
-<main>
+      <div class="footer-column">
+        <h4>Endgame</h4>
+        <a href="raides.html">Raides</a>
+        <a href="lendarias.html">Lendárias</a>
+        <a href="incursao.html">Incursão</a>
+      </div>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">Exótica de raid | Operation Iron Horse | Endgame avançado</span>
-      <h1>Ravenous</h1>
-      <p>
-        A <strong>Ravenous</strong> é uma das exóticas mais desejadas por quem enfrenta a <strong>Operation Iron Horse</strong>. Ela combina muito bem com o lado mais técnico e avançado do endgame, sendo perfeita para fortalecer a área de raids do portal e para atrair jogadores que procuram conteúdo mais sério e organizado.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#farm">Como farmar</a>
-        <a class="btn btn-secondary" href="raides.html">Ver Raides</a>
+      <div class="footer-column">
+        <h4>Conteúdo</h4>
+        <a href="exoticas.html">Exóticas</a>
+        <a href="colecionaveis.html">Colecionáveis</a>
+        <a href="historia.html">História</a>
       </div>
     </div>
-
-    <aside class="panel hero-panel">
-      <span class="chip">Resumo rápido</span>
-      <h3>Perfil da exótica</h3>
-      <div class="mini-grid">
-        <div class="mini-card">
-          <strong>Origem</strong>
-          <span>Operation Iron Horse</span>
-        </div>
-        <div class="mini-card">
-          <strong>Tipo</strong>
-          <span>Loot de raid</span>
-        </div>
-        <div class="mini-card">
-          <strong>Farm ideal</strong>
-          <span>Grupo fixo e runs semanais</span>
-        </div>
-        <div class="mini-card">
-          <strong>Nível</strong>
-          <span>Endgame avançado</span>
-        </div>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid-2">
-    <article class="card">
-      <span class="chip">Onde dropar</span>
-      <h3>Origem da Ravenous</h3>
-      <ul class="list">
-        <li>Ligada à raid <strong>Operation Iron Horse</strong></li>
-        <li>Foco em runs no modo normal</li>
-        <li>Melhor aproveitamento com grupo organizado</li>
-        <li>Boa para jogadores que já passaram da fase inicial de raids</li>
-      </ul>
-    </article>
-
-    <article class="card" id="farm">
-      <span class="chip">Como farmar</span>
-      <h3>Rotina recomendada</h3>
-      <ul class="list">
-        <li>Montar time fixo para runs semanais</li>
-        <li>Registrar quem ainda precisa da exótica</li>
-        <li>Aproveitar personagens alternativos quando fizer sentido</li>
-        <li>Treinar fases da raid em vez de só insistir no loot</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid-2">
-    <article class="card">
-      <span class="chip">Pontos fortes</span>
-      <h3>Por que ela é tão desejada</h3>
-      <ul class="list">
-        <li>Exótica associada a conteúdo de alto nível</li>
-        <li>Fortalece o apelo da área de raids do site</li>
-        <li>Conversa bem com builds ofensivas e setups mais técnicos</li>
-        <li>É uma meta clara para jogadores de endgame</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Desafios</span>
-      <h3>O que torna o farm pesado</h3>
-      <ul class="list">
-        <li>Iron Horse exige mais coordenação que Dark Hours</li>
-        <li>Grupo desorganizado atrasa muito o progresso</li>
-        <li>Erro individual pesa bastante na raid</li>
-        <li>Nem todo time está pronto para runs consistentes logo de cara</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid-2">
-    <article class="card">
-      <span class="chip">Combina com</span>
-      <h3>Builds que fazem sentido linkar</h3>
-      <ul class="list">
-        <li><a href="build-striker-dps.html">Striker DPS</a> para grupos ofensivos</li>
-        <li>Builds de suporte para estabilizar runs de raid</li>
-        <li>Builds de precisão para jogadores mais avançados</li>
-        <li>Guias específicos de Iron Horse por encontro</li>
-      </ul>
-    </article>
-
-    <article class="card">
-      <span class="chip">Dica de portal</span>
-      <h3>Como valorizar essa página</h3>
-      <ul class="list">
-        <li>Linkar Ravenous direto da página de raids</li>
-        <li>Mostrar checklist semanal de Iron Horse</li>
-        <li>Criar depois um guia por boss da raid</li>
-        <li>Adicionar builds recomendadas para cada fase</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container">
-    <div class="cta-box">
-      <h2>A Ravenous fortalece o lado mais técnico do seu portal</h2>
-      <p>
-        Com esta página, você já começa a transformar a área de exóticas em um centro real de farm e endgame. O próximo passo natural é fazer a página da <strong>Regulus</strong>, que conversa muito bem com Iron Horse e com conteúdo em formato checklist.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="raides.html">Voltar para Raides</a>
-        <a class="btn btn-secondary" href="exoticas.html">Voltar para Exóticas</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    
-    <div class="footer-brand">
-      <strong>Agent Hub Division 2</strong>
-      <p class="footer-text">
-        Guias completos de builds, exóticas e conteúdo endgame de The Division 2 para PvE e PvP.
-      </p>
-      <span class="footer-copy">
-        &copy; 2026 Todos os direitos reservados.
-      </span>
-    </div>
-
-    <div class="footer-column">
-      <h4>Início</h4>
-      <a href="index.html">Home</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Builds</h4>
-      <a href="builds.html">Todas as Builds</a>
-      <a href="builds-dps.html">DPS</a>
-      <a href="builds-skill.html">Skill</a>
-      <a href="builds-hibridas.html">Híbridas</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Endgame</h4>
-      <a href="raides.html">Raides</a>
-      <a href="lendarias.html">Lendárias</a>
-      <a href="incursao.html">Incursão</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Conteúdo</h4>
-      <a href="exoticas.html">Exóticas</a>
-      <a href="colecionaveis.html">Colecionáveis</a>
-      <a href="historia.html">História</a>
-    </div>
-
-  </div>
-</footer>
+  </footer>
 
   <script src="js/main.js" defer></script>
 </body>
