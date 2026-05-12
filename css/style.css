@@ -44,6 +44,7 @@ a {
   margin: 0 auto;
 }
 
+
 /* =========================
    BACKGROUND CINEMATOGRÁFICO
 ========================= */
@@ -473,8 +474,29 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
-  min-width: 0;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 0 10px rgba(255, 106, 19, .45));
+  transition: transform .3s ease, filter .3s ease;
+}
+
+.brand:hover .brand-logo {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 16px rgba(255, 106, 19, .75));
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
 
 .brand-mark {
@@ -494,15 +516,13 @@ a {
 }
 
 .brand-copy strong {
-  display: block;
-  font-size: 1rem;
-  font-weight: 800;
+  color: var(--text);
+  font-size: .95rem;
 }
 
 .brand-copy span {
-  display: block;
-  font-size: 0.83rem;
   color: var(--muted);
+  font-size: .78rem;
 }
 
 .menu {
@@ -1139,7 +1159,7 @@ h4 {
   overflow: hidden;
 }
 
-//* =========================
+/* =========================
    RAID BOSS CARDS
 ========================= */
 
@@ -1506,7 +1526,6 @@ h4 {
   opacity: 1;
   transform: scale(1.08);
 }
-
 
 
 /* =========================
@@ -1979,7 +1998,7 @@ footer {
   }
 }
 
-/* =========================
+/* =========================  
    MOBILE SMALL (560px)
 ========================= */
 
