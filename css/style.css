@@ -479,12 +479,12 @@ a {
 }
 
 .brand-logo {
-  width: 88px;
-  height: 88px;
+  width: 58px;
+  height: 58px;
   object-fit: contain;
   border-radius: 50%;
   flex: 0 0 auto;
-  filter: drop-shadow(0 0 10px rgba(255, 106, 19, .45));
+  filter: drop-shadow(0 0 12px rgba(255, 106, 19, .45));
   transition: transform .3s ease, filter .3s ease;
 }
 
@@ -645,8 +645,8 @@ h4 {
   margin-bottom: 14px;
   font-family: 'Orbitron', sans-serif;
   font-size: clamp(2.4rem, 4.8vw, 4.8rem);
-  line-height: 1.02;
-  max-width: 900px;
+  line-height: 1.05;
+  max-width: 780px;
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
@@ -656,7 +656,7 @@ h4 {
 }
 
 .hero p {
-  max-width: 760px;
+  max-width: 640px;
   font-size: 1.05rem;
   line-height: 1.85;
   color: #c4cfdb;
@@ -914,9 +914,13 @@ h4 {
   z-index: 2;
 }
 
+.hero-panel p {
+  max-width: 100%;
+}
+
 .mini-card {
   border-radius: 18px;
-  padding: 16px;
+  padding: 14px;
   background: rgba(255, 255, 255, 0.03);
   display: block;
   color: inherit;
@@ -935,11 +939,11 @@ h4 {
   color: var(--orange-2);
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 6px;
-  font-size: 1rem;
+  font-size: .92rem;
 }
 
 .mini-card span {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   opacity: 0.7;
 }
 
@@ -1956,6 +1960,45 @@ footer {
 
 @media (max-width: 768px) {
 
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-copy strong {
+    font-size: .82rem;
+  }
+
+  .brand-copy span {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 110px;
+    padding-bottom: 48px;
+  }
+
+   .hero-grid {
+    gap: 26px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.05;
+    max-width: 12ch;
+  }
+
+  .hero p {
+    font-size: .98rem;
+    line-height: 1.55;
+    max-width: 34ch;
+  }
+
+  .eyebrow {
+    font-size: .72rem;
+    letter-spacing: .12em;
+  }
+
   .hero-actions {
     display: flex;
     flex-direction: column;
@@ -1964,10 +2007,37 @@ footer {
 
   .hero-actions .btn {
     width: 100%;
+    justify-content: center;
+  }
+
+  .hero-panel {
+    padding: 18px;
+  }
+
+  .hero-panel h3 {
+    font-size: 1.1rem;
+  }
+
+  .hero-panel p {
+    font-size: .9rem;
+    line-height: 1.45;
   }
 
   .mini-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .mini-card {
+    padding: 14px;
+  }
+
+  .mini-card strong {
+    font-size: .92rem;
+  }
+
+  .mini-card span {
+    font-size: .78rem;
   }
 
   .card h3 {
