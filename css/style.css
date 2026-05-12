@@ -503,8 +503,12 @@ a {
 }
 
 .brand-copy strong {
-  color: var(--text);
+  color: #ff6a13;
   font-size: .95rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
 }
 
 .brand-copy span {
@@ -1780,9 +1784,11 @@ footer {
 }
 
 .footer-brand strong {
+  color: #ff6a13;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1rem;
-  color: #fff;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
 }
 
 .footer-copy {
