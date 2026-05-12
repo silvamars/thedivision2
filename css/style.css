@@ -73,18 +73,6 @@ a {
   background-image: url('../img/raids/The-Division-2-Operation-Iron-Horse.jpg');
 }
 
-.page-dark-hours .bg-image {
-  background-image: url('../img/raids/the-division2-dark-hours.jpg');
-  background-position: center 50%;
-  background-size: 93%;
-}
-
-.page-iron-horse .bg-image {
-  background-image: url('../img/raids/the-division2-iron-horse-arena4.jpg');
-  background-position: center 50%;
-  background-size: 93%;
-}
-
 .page-incursao .bg-image {
   background-image: url('../img/wright.jpg');
   background-position: center 25%;
@@ -104,11 +92,10 @@ a {
   background-size: 106%;
 }
 
-.page-colecionaveis .bg-image {
-  background-image: url('../img/division-colecionaveis.webp');
-  background-position: 50% 30%;
-  background-size: cover;
-  filter: brightness(0.75) contrast(1.1);
+.page-intensificacao-prototipos .bg-image {
+  background-image: url('../img/the-division2-prototipos.png');
+  background-position: 58% 42%;
+  background-size: 106%;
 }
 
 .page-lendarias .bg-image {
